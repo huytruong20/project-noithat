@@ -1,0 +1,91 @@
+// =============================================================================
+// SƠ ĐỒ CƠ SỞ DỮ LIỆU — Nội thất HT
+//
+// Hai bảng khớp đúng kiểu dữ liệu mà mã nguồn đang dùng, nên khi bật Postgres
+// lên thì giao diện không phải sửa gì.
+//
+// Sau khi sửa file này phải chạy lại:  npm run db:day
+// =============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Prisma 7 không nhận url ở đây nữa — chuỗi kết nối đọc từ DATABASE_URL
+  // qua file prisma.config.ts (cho lệnh dòng lệnh) và lib/auth/db.ts (cho web).
+}
+
+/// Tài khoản khách và nhân viên.
+model NguoiDung {
+  id String @id @default(uuid())
+
+  /// Luôn lưu dạng chữ thường đã cắt khoảng trắng, xem hàm chuanEmail().
+  /// @unique để cơ sở dữ liệu tự chặn hai tài khoản trùng email — kiểm tra
+  /// bằng mã ở tầng trên vẫn có thể lọt khi hai người bấm đăng ký cùng lúc.
+  email String @unique
+
+  hoTen       String
+  soDienThoai String?
+
+  /// "khach" hoặc "admin"
+  vaiTro String @default("khach")
+
+  /// Chuỗi scrypt dạng "muối:khoá". KHÔNG BAO GIỜ chứa mật khẩu nguyên văn.
+  matKhauBam String
+
+  taoLuc DateTime @default(now())
+
+  donHang DonHang[]
+
+  @@map("nguoi_dung")
+}
+
+/// Đơn hàng đặt qua website.
+model DonHang {
+  /// Mã đơn khách đọc được, kiểu HT-A1B2C3. Dùng luôn làm khoá chính vì khách
+  /// tra cứu bằng mã này, không cần thêm một id nội bộ nữa.
+  ma String @id
+
+  taoLuc DateTime @default(now())
+
+  /// "cho-xac-nhan" | "dang-chuan-bi" | "dang-giao" | "hoan-tat"
+  trangThai String @default("cho-xac-nhan")
+
+  // ---- Người nhận ----
+  tenKhach    String
+  soDienThoai String
+  email       String?
+  diaChi      String?
+  ghiChu      String?
+
+  // ---- Hàng đặt ----
+  /// Danh sách món dạng JSON: slug, tên, giá, màu, số lượng, ghi chú.
+  /// Cố tình chép cả TÊN và GIÁ vào đây thay vì chỉ nối tới bảng sản phẩm —
+  /// tháng sau đổi giá thì đơn cũ vẫn phải giữ đúng giá lúc khách đặt.
+  hangDat Json
+
+  tamTinh   Int
+  giamGia   Int?
+  maGiamGia String?
+  vanChuyen Int
+  tongTien  Int
+
+  /// Mô tả hình thức thanh toán, kèm kỳ hạn nếu trả góp.
+  thanhToan String
+
+  /// Đơn đặt nhanh qua điện thoại, chưa có địa chỉ đầy đủ.
+  datNhanh Boolean @default(false)
+
+  // ---- Chủ đơn ----
+  /// Rỗng nghĩa là khách đặt mà không đăng nhập.
+  /// onDelete: SetNull — xoá tài khoản thì đơn vẫn còn để đối soát sổ sách.
+  nguoiDungId String?
+  nguoiDung   NguoiDung? @relation(fields: [nguoiDungId], references: [id], onDelete: SetNull)
+
+  @@index([nguoiDungId])
+  @@index([taoLuc])
+  @@map("don_hang")
+}

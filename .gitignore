@@ -1,0 +1,20 @@
+node_modules/
+.next/
+out/
+build/
+*.log
+.env*
+!.env.example
+.DS_Store
+next-env.d.ts
+tsconfig.tsbuildinfo
+lib/data/images.generated.ts
+
+# Tài khoản, đơn hàng và khoá ký phiên đăng nhập — không đưa lên kho mã nguồn
+.data/
+
+# Mã Prisma sinh tự động, chạy `npm run db:sinh` là có lại
+/node_modules/.prisma
+
+# Cấu hình Claude Code riêng của từng máy, không phải mã dự án
+.claude/settings.local.json

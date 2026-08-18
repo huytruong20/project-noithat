@@ -1,0 +1,373 @@
+@import "tailwindcss";
+
+@theme {
+  /* ==========================================================================
+   * BẢNG MÀU — nguyên tắc: nền trung tính + chữ đen + ĐÚNG MỘT màu nhấn.
+   *
+   * Trung tính:  bone (nền) · sand (nền phụ) · line (đường kẻ) · ink · muted
+   * Màu nhấn:    walnut — nâu gỗ ngả terracotta, dùng cho link, nút chính,
+   *              tiêu đề nhỏ. Đây là màu nhấn DUY NHẤT của hệ thống.
+   * Màu trạng thái (không phải màu thương hiệu, chỉ dùng để báo trạng thái):
+   *              clay = giảm giá / cảnh báo, sage = thành công / đã xác thực.
+   *              Không dùng hai màu này để trang trí.
+   * ========================================================================== */
+  --color-bone: #faf7f2;
+  --color-sand: #f2ece2;
+  --color-line: #e5ddd1;
+  --color-ink: #1c1a17;
+  --color-muted: #6f6559;
+
+  --color-walnut: #8a5a3b;
+  --color-walnut-dark: #6d4529;
+  --color-walnut-soft: #f0e6dc;
+
+  --color-clay: #b4552f;
+  --color-sage: #5f6b53;
+
+  /* ---- Typography: Be Vietnam Pro cho chữ đọc, Lora cho tiêu đề ---- */
+  --font-display: var(--font-lora), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-be-vietnam), "Segoe UI", system-ui, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Nhịp bo góc & đổ bóng ---- */
+  --radius-card: 2px;
+  --shadow-soft: 0 1px 2px rgb(28 26 23 / 0.04), 0 8px 24px -12px rgb(28 26 23 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(28 26 23 / 0.06), 0 18px 40px -16px rgb(28 26 23 / 0.28);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bone);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    /* Chuẩn đọc: 16px / 1.6 — đủ lớn cho tiếng Việt có dấu trên màn hình nhỏ */
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  /* Chữ nhỏ trong tiếng Việt dễ mất dấu — nới hàng cho các cỡ dưới 16px */
+  .text-sm,
+  .text-xs {
+    line-height: 1.55;
+  }
+
+  /**
+   * Trình duyệt đặt sẵn `min-inline-size: min-content` cho fieldset, khiến nó
+   * không co lại được và đẩy cả cột form tràn ngang trên màn hình hẹp.
+   * Tailwind preflight không xoá thuộc tính này nên phải tự đặt lại.
+   */
+  fieldset {
+    min-inline-size: 0;
+  }
+
+  ::selection {
+    background: var(--color-walnut);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-walnut);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Bề rộng nội dung dùng chung cho mọi trang */
+  .shell {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Nhãn chữ nhỏ in hoa dùng trước mỗi tiêu đề khối */
+  /**
+   * Giá tiền luôn dùng font sans: ký hiệu ₫ trong font serif bị nhỏ và lệch
+   * lên trên, còn chữ số đều bề ngang giúp cột giá thẳng hàng.
+   */
+  .price {
+    font-family: var(--font-sans);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  .eyebrow {
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-walnut);
+    font-weight: 600;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8125rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background: var(--color-ink);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-walnut);
+  }
+
+  .btn-accent {
+    background: var(--color-walnut);
+    color: #fff;
+  }
+  .btn-accent:hover {
+    background: var(--color-walnut-dark);
+  }
+
+  .btn-outline {
+    border: 1px solid var(--color-ink);
+    color: var(--color-ink);
+  }
+  .btn-outline:hover {
+    background: var(--color-ink);
+    color: #fff;
+  }
+
+  .btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  .field {
+    width: 100%;
+    border: 1px solid var(--color-line);
+    background: #fff;
+    padding: 0.75rem 0.875rem;
+    font-size: 0.9375rem;
+    border-radius: 2px;
+  }
+  .field:focus {
+    border-color: var(--color-walnut);
+    outline: none;
+  }
+
+  .prose-vn {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+  }
+  .prose-vn h2 {
+    color: var(--color-ink);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .prose-vn h3 {
+    color: var(--color-ink);
+    font-size: 1.125rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose-vn p {
+    margin-bottom: 1rem;
+  }
+  .prose-vn ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .prose-vn li {
+    margin-bottom: 0.375rem;
+  }
+  .prose-vn strong {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+}
+
+/* Ẩn thanh cuộn cho các hàng cuộn ngang trên mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+ * CHUYỂN ĐỘNG
+ * --------------------------------------------------------------------------
+ * Ba nguyên tắc giữ cho trang bán hàng không bị rối:
+ *   1. Chỉ chạy transform + opacity — hai thuộc tính này trình duyệt xử lý
+ *      trên GPU, không gây giật khi cuộn như animate chiều cao hay màu nền.
+ *   2. Quãng ngắn (0.2–0.6s) và luôn đi lên/vào, không nảy, không xoay.
+ *   3. Ai bật "giảm chuyển động" trong hệ điều hành thì tắt sạch — người say
+ *      chuyển động (vestibular disorder) sẽ chóng mặt thật với hiệu ứng cuộn.
+ * ========================================================================== */
+
+@keyframes hien-len {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hien-dan {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes phong-vao {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes truot-xuong {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes loang-sang {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes xoay-tron {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Hiện dần khi cuộn tới. JS gắn data-hien="roi" khi khối lọt vào màn hình --- */
+[data-hien] {
+  opacity: 0;
+}
+[data-hien="roi"] {
+  animation: hien-len 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--tre, 0ms);
+}
+
+.animate-hien-dan {
+  animation: hien-dan 0.35s ease both;
+}
+.animate-phong-vao {
+  animation: phong-vao 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.animate-truot-xuong {
+  animation: truot-xuong 0.22s ease-out both;
+}
+.animate-xoay {
+  animation: xoay-tron 0.9s linear infinite;
+}
+
+/* Khung xám nhấp nháy trong lúc chờ dữ liệu, đỡ nhảy bố cục */
+.dang-tai {
+  background: linear-gradient(
+    90deg,
+    var(--color-sand) 25%,
+    #fff 50%,
+    var(--color-sand) 75%
+  );
+  background-size: 200% 100%;
+  animation: loang-sang 1.4s linear infinite;
+}
+
+/* Ảnh trong thẻ sản phẩm phóng nhẹ khi rê chuột */
+.anh-zoom {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .anh-zoom {
+  transform: scale(1.06);
+}
+
+/* Nút nhấn lún xuống một chút cho có phản hồi tay */
+.btn {
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    transform 0.12s;
+}
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Gạch chân chạy từ trái sang cho link trong đoạn văn */
+.link-gach {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+.link-gach:hover {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-hien] {
+    opacity: 1;
+  }
+}
