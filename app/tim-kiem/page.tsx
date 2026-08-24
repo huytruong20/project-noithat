@@ -68,7 +68,7 @@ export default async function SearchPage({
       <section className="shell py-10 pb-20">
         {!query ? (
           <div>
-            <p className="eyebrow mb-4">Duyệt theo danh mục</p>
+            <p className="eyebrow mb-4">Xem theo từng nhóm đồ</p>
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <Link
@@ -82,7 +82,7 @@ export default async function SearchPage({
             </div>
 
             <div className="mt-12">
-              <p className="eyebrow mb-4">Khách tìm nhiều nhất</p>
+              <p className="eyebrow mb-4">Từ khoá khách gõ nhiều nhất</p>
               <ProductGrid products={getBestSellers(4)} />
             </div>
           </div>
@@ -94,8 +94,8 @@ export default async function SearchPage({
               Không tìm thấy sản phẩm nào khớp “{query}”
             </p>
             <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted">
-              Thử từ khoá ngắn hơn, hoặc gọi 0931 619 177 để chúng tôi tìm giúp. Nhiều mẫu
-              đóng theo yêu cầu chưa lên website.
+              Gõ ngắn lại xem sao, ví dụ chỉ "sofa" thay vì cả câu dài. Hoặc gọi 0931 619 177
+              để chúng tôi tìm giúp — nhiều mẫu đóng theo yêu cầu chưa kịp đưa lên web.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link href="/danh-muc" className="btn btn-primary">

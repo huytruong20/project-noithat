@@ -48,7 +48,7 @@ export default function OrderLookupPage() {
 
         {results !== null && results.length === 0 && (
           <div className="mt-8 border border-dashed border-line bg-white p-8 text-center">
-            <p className="font-display text-lg">Không tìm thấy đơn hàng nào</p>
+            <p className="font-display text-lg">Không thấy đơn nào khớp</p>
             <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted">
               Kiểm tra lại mã đơn hoặc số điện thoại. Đơn đặt qua điện thoại với nhân
               viên có thể chưa hiện ở đây — gọi{" "}
@@ -173,7 +173,7 @@ export default function OrderLookupPage() {
         })}
 
         <div className="mt-10 border border-line bg-sand p-6">
-          <p className="font-display text-lg">Đơn hàng được lưu ở đâu?</p>
+          <p className="font-display text-lg">Đơn của bạn nằm ở đâu</p>
           <p className="mt-2 text-sm leading-relaxed text-muted">
             Bản dựng này lưu đơn ngay trên trình duyệt của bạn để bạn xem thử luồng tra
             cứu. Khi nối với hệ thống bán hàng thật, chỉ cần thay hai hàm trong{" "}

@@ -5,9 +5,9 @@ export default function NotFound() {
   return (
     <section className="shell max-w-2xl py-24 text-center md:py-32">
       <p className="eyebrow mb-3">Lỗi 404</p>
-      <h1 className="text-3xl md:text-4xl">Không tìm thấy trang này</h1>
+      <h1 className="text-3xl md:text-4xl">Không có trang nào ở đây</h1>
       <p className="mt-3 text-[15px] leading-relaxed text-muted">
-        Có thể đường dẫn đã thay đổi hoặc sản phẩm đã ngừng kinh doanh. Thử tìm lại từ
+        Có thể đường dẫn đã đổi, hoặc món đó chúng tôi ngừng bán rồi. Thử tìm lại từ
         danh mục bên dưới, hoặc gọi 0931 619 177 để chúng tôi tìm giúp bạn.
       </p>
 

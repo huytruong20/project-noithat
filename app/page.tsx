@@ -23,19 +23,19 @@ const reviews = [
   {
     name: "Chị Thu Hà",
     place: "An Khê, Gia Lai",
-    text: "Đội lắp đặt đến đúng giờ, trải thảm lót sàn rồi mới làm, xong dọn sạch mang hết bao bì đi. Sofa dùng 8 tháng vẫn chưa xẹp chỗ nào.",
+    text: "Hẹn 9 giờ thì 8 giờ 50 thợ đã đứng dưới sân. Trải bạt kín sàn gỗ mới làm, xong hút bụi và khiêng hết thùng xốp xuống xe. Sofa qua tám tháng, ngồi chỗ nào cũng còn nảy.",
     rating: 5,
   },
   {
     name: "Anh Đức Minh",
     place: "Thảo Điền, TP.HCM",
-    text: "Tư vấn viên bảo tôi đo lại chiếu nghỉ cầu thang trước khi chốt, hoá ra đúng là không quay được bàn 1m8. Đổi sang mẫu khác, tránh được một phen mệt.",
+    text: "Tôi chốt bàn 1m8 rồi, bạn tư vấn còn bảo ra đo lại chiếu nghỉ cầu thang. Đo xong mới biết hụt 20 phân, không quay bàn lên được. Đổi mẫu khác, đỡ một trận khiêng lên khiêng xuống.",
     rating: 5,
   },
   {
     name: "Chị Ngọc Anh",
     place: "Công ty Bluewave, TP.HCM",
-    text: "Đặt 40 bộ bàn ghế, lắp gọn trong ba ngày cuối tuần. Sáng thứ Hai nhân viên đến là ngồi làm luôn, không mất ngày công nào.",
+    text: "Bốn mươi bộ bàn ghế, họ chia hai kíp làm từ chiều thứ Sáu tới hết Chủ nhật. Sáng thứ Hai nhân viên vào là ngồi vào chỗ làm luôn, công ty không nghỉ buổi nào.",
     rating: 5,
   },
 ];
@@ -64,26 +64,26 @@ export default function HomePage() {
       <section className="border-b border-line bg-sand">
         <div className="shell grid items-center gap-10 py-12 lg:grid-cols-[1.18fr_1fr] lg:py-20">
           <div>
-            <p className="eyebrow mb-4">Nội thất gỗ · Giao &amp; lắp đặt tận nhà</p>
+            <p className="eyebrow mb-4">Xưởng mộc An Khê · Giao lắp tận nơi</p>
 
             {/* Câu chính: nói cả độ bền lẫn thẩm mỹ trong một dòng */}
             {/* text-balance: trình duyệt tự cân độ dài hai dòng khi màn hình hẹp */}
             <h1 className="text-balance text-4xl leading-[1.12] md:text-5xl lg:text-[3.05rem]">
-              Đủ bền cho thập kỷ,
+              Mua một lần,
               <br className="hidden lg:inline" />{" "}
-              đủ đẹp cho mọi góc nhìn.
+              dùng tới lúc con vào đại học.
             </h1>
 
             {/* Câu dẫn: nhấn giá trị dùng lâu, đối lại thói quen mua theo ảnh đẹp */}
             <p className="mt-4 max-w-lg font-display text-lg leading-snug text-walnut md:text-xl">
-              Giá trị 10 năm, không dừng lại ở một bức hình.
+              Đồ gỗ tốt không nằm ở tấm ảnh, nằm ở mối ghép.
             </p>
 
             {/* Đoạn chứng minh: con số cụ thể để câu khẩu hiệu phía trên có cơ sở */}
             <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-muted">
-              Gỗ sấy đúng độ ẩm 8–12%, mút D40 chính hãng, mối ghép chắc. Mọi thông số
-              kích thước, chất liệu và bảo hành đều ghi rõ trên từng sản phẩm — bạn
-              biết chính xác mình mua gì trước khi đặt.
+              Gỗ vào lò sấy tới khi còn 8–12% ẩm mới đem đóng, nên không nứt không cong
+              theo mùa. Đệm mút D40 nguyên khối. Từng món ghi đủ số đo, loại gỗ, tải
+              trọng chịu được — bạn đọc hết rồi hãy quyết định.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -91,35 +91,35 @@ export default function HomePage() {
                 Xem danh mục sản phẩm
               </Link>
               <Link href="/lien-he" className="btn btn-outline">
-                Tư vấn miễn phí
+                Nhờ tư vấn, không mất phí
               </Link>
             </div>
 
             {/* Ba khẳng định ngắn, tách bằng dấu chấm giữa dòng */}
             <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-medium">
-              <span>Nội thất thật</span>
+              <span>Gỗ thật, không dán giấy</span>
               <span className="text-walnut" aria-hidden="true">
                 ·
               </span>
-              <span>Giá trị thật</span>
+              <span>Giá ghi sao tính vậy</span>
               <span className="text-walnut" aria-hidden="true">
                 ·
               </span>
-              <span>Bền bỉ theo năm tháng</span>
+              <span>Hỏng đâu sửa đó</span>
             </p>
 
             <dl className="mt-10 grid max-w-lg grid-cols-3 gap-6 border-t border-line pt-6">
               <div>
                 <dt className="text-2xl font-semibold">{products.length}+</dt>
-                <dd className="mt-0.5 text-xs text-muted">Mẫu đang bán</dd>
+                <dd className="mt-0.5 text-xs text-muted">Mẫu có sẵn</dd>
               </div>
               <div>
                 <dt className="text-2xl font-semibold">400+</dt>
-                <dd className="mt-0.5 text-xs text-muted">Dự án đã bàn giao</dd>
+                <dd className="mt-0.5 text-xs text-muted">Căn nhà đã lắp</dd>
               </div>
               <div>
                 <dt className="text-2xl font-semibold">5 năm</dt>
-                <dd className="mt-0.5 text-xs text-muted">Bảo hành tối đa</dd>
+                <dd className="mt-0.5 text-xs text-muted">Bảo hành gỗ tự nhiên</dd>
               </div>
             </dl>
           </div>
@@ -147,9 +147,9 @@ export default function HomePage() {
             {/* Ô cuối: chú thích thay vì để trống */}
             <div className="flex flex-col justify-end pb-1 pl-1">
               <p className="font-display text-base leading-snug text-ink md:text-lg">
-                Đẹp vượt thời gian,
+                Gỗ ghép mộng,
                 <br />
-                bền qua từng trải nghiệm.
+                càng dùng càng khít.
               </p>
               <Link
                 href="/danh-muc"
@@ -165,10 +165,10 @@ export default function HomePage() {
       {/* ------------------------ 2. Danh mục nhanh ----------------------- */}
       <Reveal as="section" className="shell py-14 md:py-20">
         <SectionHeading
-          eyebrow="Phong cách Tối giản & Tinh tế (Hợp với đồ Decor, Nội thất, Thời trang)"
+          eyebrow="Tám nhóm đồ, lọc theo giá và kích cỡ"
           eyebrowTone="plain"
-          title="Khám phá theo nhu cầu"
-          description="Dễ dàng tìm thấy sản phẩm hoàn hảo nhờ bộ lọc thông minh theo giá, chất liệu và kích cỡ."
+          title="Bạn đang cần món gì?"
+          description="Chọn nhóm rồi lọc dần theo tiền, chất liệu, số đo — khỏi phải cuộn hết ba mươi mấy món."
           href="/danh-muc"
         />
 
@@ -203,9 +203,9 @@ export default function HomePage() {
       <Reveal as="section" className="border-y border-line bg-white/60 py-14 md:py-20">
         <div className="shell">
           <SectionHeading
-            eyebrow="Nổi bật"
-            title="Sản phẩm khách chọn nhiều nhất"
-            description="Bán chạy dựa trên số đơn thực tế 90 ngày gần nhất, không phải xếp thủ công."
+            eyebrow="Bán chạy"
+            title="Những món khách chốt nhiều nhất"
+            description="Xếp theo số đơn có thật trong 90 ngày gần đây. Chúng tôi không kéo món tồn lên đầu."
             href="/danh-muc"
             linkLabel="Xem toàn bộ"
           />
@@ -238,9 +238,9 @@ export default function HomePage() {
       {/* ------------------ 4. Bộ sưu tập theo không gian ----------------- */}
       <Reveal as="section" className="shell py-14 md:py-20">
         <SectionHeading
-          eyebrow="Bộ sưu tập"
-          title="Chọn theo không gian trong nhà"
-          description="Mỗi bộ sưu tập là các món đã được phối sẵn về tỉ lệ và màu — mua trọn bộ không sợ lệch tông."
+          eyebrow="Theo từng phòng"
+          title="Mua trọn một phòng cho khỏi lệch tông"
+          description="Mỗi bộ đã được ghép sẵn về màu gỗ và chiều cao. Lấy cả bộ thì đặt cạnh nhau vừa mắt ngay, không phải chỉnh."
           href="/bo-suu-tap"
         />
 
@@ -325,9 +325,9 @@ export default function HomePage() {
       {/* --------------------- 6. Đánh giá khách hàng --------------------- */}
       <Reveal as="section" className="shell py-14 md:py-20">
         <SectionHeading
-          eyebrow="Khách hàng nói gì"
-          title="Nhận xét sau khi nhận hàng và dùng thử"
-          description="Chỉ khách đã mua mới được đánh giá. Chúng tôi không xoá đánh giá tiêu cực."
+          eyebrow="Khách đã mua kể lại"
+          title="Nhận xét viết sau khi dùng ít nhất một tháng"
+          description="Có mã đơn mới viết được. Chê cũng để nguyên, chúng tôi không gỡ bài nào xuống."
         />
 
         <div className="grid gap-4 md:grid-cols-3">
@@ -360,16 +360,16 @@ export default function HomePage() {
       <Reveal as="section" className="shell py-14 md:py-20">
         <div className="flex flex-col items-start gap-6 border border-line bg-white p-8 md:flex-row md:items-center md:justify-between md:p-12">
           <div className="max-w-xl">
-            <h2 className="text-2xl md:text-3xl">Chưa biết bắt đầu từ đâu?</h2>
+            <h2 className="text-2xl md:text-3xl">Nhà mới nhận, chưa biết kê gì?</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              Gửi mặt bằng hoặc vài tấm ảnh căn nhà, đội tư vấn sẽ gợi ý bố trí và
-              danh sách đồ kèm ngân sách dự kiến trong 24 giờ. Hoàn toàn miễn phí và
-              không ràng buộc phải mua.
+              Chụp mấy tấm ảnh phòng hoặc gửi bản vẽ căn hộ qua Zalo. Trong một ngày
+              làm việc chúng tôi gửi lại sơ đồ kê đồ, danh sách món và tổng tiền dự
+              kiến. Không mất phí, xem xong không mua cũng không sao.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
             <Link href="/lien-he" className="btn btn-accent">
-              Nhận tư vấn miễn phí
+              Gửi mặt bằng nhờ tư vấn
             </Link>
             <a href={site.hotlineHref} className="btn btn-outline">
               Gọi {site.hotline}

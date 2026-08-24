@@ -7,25 +7,25 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Liên hệ",
   description:
-    "Hotline 0931 619 177, hai showroom tại Gia Lai và TP.HCM. Gửi yêu cầu tư vấn miễn phí, phản hồi trong 24 giờ.",
+    "Gọi 0931 619 177 gặp người thật. Hai showroom ở Gia Lai và TP.HCM, mở cả cuối tuần. Gửi mặt bằng nhờ tư vấn không mất phí.",
 };
 
 const faqs = [
   {
-    q: "Tôi muốn xem hàng thật trước khi mua thì làm thế nào?",
-    a: "Ghé một trong hai showroom, mở cửa 8:00 – 20:00 tất cả các ngày kể cả cuối tuần, không cần đặt lịch. Nếu mẫu bạn quan tâm không có sẵn tại showroom, gọi trước để chúng tôi chuyển từ kho lên.",
+    q: "Muốn sờ tận tay trước khi xuống tiền thì sao?",
+    a: "Cứ tới showroom, mở 8:00 – 20:00 mọi ngày kể cả thứ Bảy Chủ nhật, không cần hẹn trước. Món bạn đang nhắm mà showroom chưa bày thì gọi báo trước một hôm, chúng tôi chuyển từ kho lên cho bạn xem.",
   },
   {
-    q: "Bao lâu thì có người liên hệ lại?",
-    a: "Trong giờ làm việc, thường dưới 30 phút. Yêu cầu gửi ngoài giờ sẽ được xử lý vào đầu buổi sáng hôm sau, chậm nhất 24 giờ.",
+    q: "Gửi form xong bao lâu có người gọi?",
+    a: "Trong giờ làm thì thường chưa tới 30 phút. Gửi lúc đêm hôm thì sáng hôm sau chúng tôi gọi, chậm nhất là trong 24 giờ.",
   },
   {
-    q: "Tôi cần báo giá nội thất cho cả căn hộ / văn phòng?",
-    a: "Gửi mặt bằng (ảnh chụp bản vẽ cũng được) kèm ngân sách dự kiến qua form bên cạnh. Chúng tôi trả lại bản gợi ý bố trí và bảng giá chi tiết trong 24 giờ, miễn phí.",
+    q: "Cần báo giá cho nguyên căn hộ hoặc cả văn phòng?",
+    a: "Gửi mặt bằng qua form bên cạnh, chụp ảnh bản vẽ bằng điện thoại cũng đọc được. Nói thêm bạn định chi khoảng bao nhiêu để chúng tôi chọn cho vừa túi. Trong 24 giờ có sơ đồ kê đồ và bảng giá từng món. Không tính phí, không mua cũng không sao.",
   },
   {
-    q: "Đồ đã mua bị lỗi thì liên hệ ai?",
-    a: "Gọi thẳng hotline 0931 619 177 và đọc số điện thoại đã đặt hàng — chúng tôi tra được toàn bộ lịch sử mà bạn không cần giữ giấy tờ. Kỹ thuật viên sẽ hẹn lịch tới kiểm tra.",
+    q: "Đồ mua rồi bị hỏng thì gọi ai?",
+    a: "Gọi thẳng 0931 619 177, đọc số điện thoại hồi đặt hàng là xong — chúng tôi tra ra bạn mua gì ngày nào, không cần giữ hoá đơn. Thợ sẽ hẹn ngày tới xem.",
   },
 ];
 
@@ -37,10 +37,10 @@ export default function ContactPage() {
       <section className="border-b border-line bg-sand">
         <div className="shell py-10 md:py-14">
           <p className="eyebrow mb-2">Liên hệ</p>
-          <h1 className="text-3xl md:text-4xl">Chúng tôi nghe máy thật</h1>
+          <h1 className="text-3xl md:text-4xl">Bấm số là gặp người</h1>
           <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
-            Không tổng đài tự động vòng vo. Gọi {site.hotline} trong khung 8:00 – 20:00
-            là gặp ngay nhân viên tư vấn, hoặc gửi form để chúng tôi gọi lại.
+            Không có tổng đài bấm phím một phím hai. Gọi {site.hotline} trong khoảng 8:00 –
+            20:00 là có nhân viên tư vấn nhấc máy. Bận thì để lại form, chúng tôi gọi lại.
           </p>
         </div>
       </section>

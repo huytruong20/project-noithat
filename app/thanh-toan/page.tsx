@@ -211,9 +211,9 @@ export default function CheckoutPage() {
       <>
         <Breadcrumbs items={[{ label: "Thanh toán" }]} />
         <section className="shell max-w-xl py-20 text-center">
-          <h1 className="text-3xl">Chưa có gì để thanh toán</h1>
+          <h1 className="text-3xl">Giỏ trống thì chưa trả tiền được</h1>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Giỏ hàng của bạn đang trống. Chọn vài món rồi quay lại bước này nhé.
+            Bạn chưa chọn món nào. Ngắm vài thứ rồi quay lại đây trả tiền sau cũng được.
           </p>
           <Link href="/danh-muc" className="btn btn-primary mt-6">
             Xem sản phẩm
@@ -230,15 +230,15 @@ export default function CheckoutPage() {
       <form onSubmit={placeOrder} className="shell py-10 md:py-14">
         <h1 className="text-3xl md:text-4xl">Thanh toán</h1>
         <p className="mt-2 text-sm text-muted">
-          Điền thông tin nhận hàng. Chúng tôi gọi xác nhận trước khi giao, chưa trừ tiền
-          ở bước này.
+          Điền chỗ nhận hàng. Chúng tôi gọi hỏi lại giờ giấc trước khi chở đi, bước này
+          chưa trừ đồng nào.
         </p>
 
         <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_380px] lg:gap-14">
           <div className="space-y-10">
-            {/* Thông tin nhận hàng */}
+            {/* Giao tới đâu, gọi cho ai */}
             <fieldset id="thong-tin-nhan-hang">
-              <legend className="mb-4 font-display text-xl">Thông tin nhận hàng</legend>
+              <legend className="mb-4 font-display text-xl">Giao tới đâu, gọi cho ai</legend>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
@@ -361,9 +361,9 @@ export default function CheckoutPage() {
               </div>
             </fieldset>
 
-            {/* Khu vực giao hàng */}
+            {/* Nhà bạn ở khu nào */}
             <fieldset>
-              <legend className="mb-4 font-display text-xl">Khu vực giao hàng</legend>
+              <legend className="mb-4 font-display text-xl">Nhà bạn ở khu nào</legend>
               <div className="space-y-2">
                 {shippingZones.map((option) => {
                   const optionFee = feeFor(option.value);
@@ -395,9 +395,9 @@ export default function CheckoutPage() {
               </div>
             </fieldset>
 
-            {/* Phương thức thanh toán */}
+            {/* Bạn muốn trả bằng cách nào */}
             <fieldset>
-              <legend className="mb-4 font-display text-xl">Phương thức thanh toán</legend>
+              <legend className="mb-4 font-display text-xl">Bạn muốn trả bằng cách nào</legend>
               <ChonThanhToan
                 gia={payment}
                 total={total}
@@ -464,7 +464,7 @@ export default function CheckoutPage() {
           <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
             <div className="border border-line bg-white">
               <div className="border-b border-line p-5">
-                <h2 className="font-display text-xl">Đơn hàng của bạn</h2>
+                <h2 className="font-display text-xl">Bạn đang đặt những gì</h2>
                 <p className="mt-1 text-xs text-muted">{count} món</p>
               </div>
 

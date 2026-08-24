@@ -1,5 +1,5 @@
 import { bam } from "./mat-khau";
-import { prisma } from "./db";
+import { layPrisma } from "./db";
 import type { KhoNguoiDung, NguoiDung, VaiTro } from "./nguoi-dung-kieu";
 import { adminMacDinh, chuanEmail } from "./nguoi-dung-kieu";
 
@@ -34,11 +34,11 @@ function doiKieu(dong: DongDb): NguoiDung {
   };
 }
 
-/** Prisma chỉ là null khi chưa đặt DATABASE_URL, mà khi đó ta đã dùng bản file. */
-function db() {
-  if (!prisma) throw new Error("Chưa có kết nối cơ sở dữ liệu");
-  return prisma;
-}
+/**
+ * Lấy client. Trả về Promise vì client nạp bằng nhập động — cách này để gói
+ * `pg` không bị nhét vào bản build cho Cloudflare, nơi chỉ dùng được Neon.
+ */
+const db = layPrisma;
 
 /**
  * Dựng tài khoản quản trị đầu tiên khi bảng còn rỗng — không có nó thì không
@@ -53,10 +53,10 @@ async function gieoAdmin() {
   if (daKiemTraHat) return;
   daKiemTraHat = true;
 
-  const soTaiKhoan = await db().nguoiDung.count();
+  const soTaiKhoan = await (await db()).nguoiDung.count();
   if (soTaiKhoan > 0) return;
 
-  await db().nguoiDung.create({
+  await (await db()).nguoiDung.create({
     data: {
       email: chuanEmail(adminMacDinh.email),
       hoTen: adminMacDinh.hoTen,
@@ -69,19 +69,19 @@ async function gieoAdmin() {
 export const khoNguoiDungDb: KhoNguoiDung = {
   async tatCa() {
     await gieoAdmin();
-    const dong = await db().nguoiDung.findMany({ orderBy: { taoLuc: "asc" } });
+    const dong = await (await db()).nguoiDung.findMany({ orderBy: { taoLuc: "asc" } });
     return dong.map(doiKieu);
   },
 
   async timTheoId(id) {
     await gieoAdmin();
-    const dong = await db().nguoiDung.findUnique({ where: { id } });
+    const dong = await (await db()).nguoiDung.findUnique({ where: { id } });
     return dong ? doiKieu(dong) : null;
   },
 
   async timTheoEmail(email) {
     await gieoAdmin();
-    const dong = await db().nguoiDung.findUnique({
+    const dong = await (await db()).nguoiDung.findUnique({
       where: { email: chuanEmail(email) },
     });
     return dong ? doiKieu(dong) : null;
@@ -91,7 +91,7 @@ export const khoNguoiDungDb: KhoNguoiDung = {
     await gieoAdmin();
 
     try {
-      const dong = await db().nguoiDung.create({
+      const dong = await (await db()).nguoiDung.create({
         data: {
           email: chuanEmail(input.email),
           hoTen: input.hoTen.trim(),
@@ -121,11 +121,11 @@ export const khoNguoiDungDb: KhoNguoiDung = {
   },
 
   async doiVaiTro(id, vaiTro) {
-    await db().nguoiDung.update({ where: { id }, data: { vaiTro } });
+    await (await db()).nguoiDung.update({ where: { id }, data: { vaiTro } });
   },
 
   async capNhatHoSo(id, thongTin) {
-    await db().nguoiDung.update({
+    await (await db()).nguoiDung.update({
       where: { id },
       data: {
         hoTen: thongTin.hoTen.trim(),

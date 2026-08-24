@@ -5,49 +5,49 @@ export const policies: Policy[] = [
     slug: "giao-hang-lap-dat",
     title: "Chính sách giao hàng & lắp đặt",
     summary:
-      "Miễn phí giao và lắp đặt nội thành Gia Lai – TP.HCM. Kỹ thuật viên lắp tại nhà, dọn sạch bao bì trước khi về.",
+      "Nội thành Gia Lai và TP.HCM không tính tiền giao, không tính tiền lắp. Thợ lắp tại nhà và mang hết bao bì đi khi xong việc.",
     updated: "01/07/2026",
     sections: [
       {
         heading: "Phạm vi và phí giao hàng",
         bullets: [
-          "Nội thành Gia Lai và TP.HCM: miễn phí giao và lắp đặt cho mọi đơn hàng.",
-          "Ngoại thành hai thành phố trên: miễn phí cho đơn từ 10 triệu, dưới mức này phụ thu 300.000đ.",
-          "Các tỉnh thành khác: phí tính theo khối lượng và quãng đường, nhân viên báo trước khi xác nhận đơn. Đơn từ 20 triệu được miễn phí vận chuyển toàn quốc.",
-          "Đồ trang trí nhỏ và đèn: miễn phí giao toàn quốc qua đơn vị chuyển phát.",
+          "Nội thành Gia Lai và TP.HCM: không mất đồng nào, đơn to nhỏ gì cũng vậy.",
+          "Ngoại thành hai nơi này: đơn từ 10 triệu là miễn phí; chưa tới mức đó thì thêm 300.000đ.",
+          "Tỉnh khác: tính theo cân nặng và quãng đường, nhân viên báo con số cụ thể trước khi bạn chốt đơn. Đơn từ 20 triệu thì cả nước đều miễn phí.",
+          "Đèn và đồ trang trí nhỏ: gửi chuyển phát, cả nước không tính tiền ship.",
         ],
       },
       {
         heading: "Thời gian giao hàng",
         bullets: [
-          "Hàng có sẵn: 2–5 ngày làm việc kể từ khi xác nhận đơn.",
-          "Hàng đặt sản xuất: 7–21 ngày tuỳ sản phẩm, thời gian cụ thể ghi rõ trên trang chi tiết từng món.",
-          "Chúng tôi gọi xác nhận khung giờ trước 1 ngày. Bạn có thể đổi lịch giao miễn phí nếu báo trước 24 giờ.",
+          "Hàng có sẵn trong kho: 2–5 ngày làm việc tính từ lúc chốt đơn.",
+          "Hàng đóng theo yêu cầu: 7–21 ngày tuỳ món, số ngày cụ thể ghi ngay trên trang sản phẩm đó.",
+          "Trước ngày giao một hôm chúng tôi gọi hỏi khung giờ nào bạn ở nhà. Bận thì đổi lịch, báo trước 24 giờ là không mất phí.",
         ],
       },
       {
         heading: "Lắp đặt tại nhà",
         paragraphs: [
-          "Toàn bộ sản phẩm cần lắp ráp đều có kỹ thuật viên thực hiện tại nhà, đã tính trong giá bán. Đội lắp đặt mang theo thảm lót sàn, hút bụi khu vực làm việc và mang toàn bộ bao bì đi khi hoàn tất.",
+          "Món nào cần lắp thì thợ tới nhà lắp, tiền công đã nằm trong giá bán rồi, không phát sinh thêm. Thợ mang bạt trải sàn trước khi làm, xong việc hút bụi khu vực vừa làm và khiêng hết thùng carton, xốp xuống xe.",
         ],
         bullets: [
-          "Thời gian lắp trung bình: sofa 15 phút, giường 30–45 phút, tủ quần áo 60–90 phút.",
-          "Kỹ thuật viên hướng dẫn cách vận hành và bảo quản trước khi ra về.",
-          "Chúng tôi chỉ nghiệm thu khi bạn đã kiểm tra và hài lòng.",
+          "Lắp mất bao lâu: sofa khoảng 15 phút, giường 30–45 phút, tủ quần áo 60–90 phút.",
+          "Trước khi về, thợ chỉ bạn cách dùng và cách giữ cho bền.",
+          "Bạn xem kỹ, ưng rồi mới ký nhận. Chưa ưng thì thợ chưa đi.",
         ],
       },
       {
         heading: "Trường hợp thang máy không đủ kích thước",
         paragraphs: [
-          "Nếu kiện hàng không lọt thang máy, chúng tôi hỗ trợ khiêng thang bộ miễn phí tới tầng 5. Từ tầng 6 trở lên phụ thu 50.000đ mỗi tầng mỗi kiện. Vui lòng báo trước tình trạng thang máy khi đặt hàng để chúng tôi bố trí đủ nhân sự.",
+          "Kiện hàng không lọt thang máy thì thợ khiêng bộ, tới tầng 5 không tính tiền. Từ tầng 6 trở lên mỗi tầng mỗi kiện thêm 50.000đ. Lúc đặt hàng bạn nói trước thang máy nhà mình rộng bao nhiêu để chúng tôi cắt đủ người, tránh tới nơi rồi phải quay về.",
         ],
       },
       {
         heading: "Kiểm tra khi nhận hàng",
         bullets: [
-          "Bạn có quyền mở kiện kiểm tra trước khi ký nhận.",
-          "Nếu phát hiện lỗi, xước hay móp do vận chuyển, báo ngay tại chỗ — chúng tôi mang về và đổi mới, không tính phí.",
-          "Sau khi ký nhận, lỗi hình thức bên ngoài vẫn được tiếp nhận trong 48 giờ nếu có ảnh chụp.",
+          "Cứ mở thùng xem thoải mái trước khi ký, không ai giục.",
+          "Thấy xước, móp hay lỗi do đường vận chuyển thì nói luôn tại chỗ — thợ chở về đổi cái mới, bạn không mất thêm đồng nào.",
+          "Ký rồi mới phát hiện lỗi bên ngoài thì trong 48 giờ vẫn báo được, chỉ cần có ảnh chụp.",
         ],
       },
     ],
@@ -56,50 +56,50 @@ export const policies: Policy[] = [
     slug: "doi-tra",
     title: "Chính sách đổi trả",
     summary:
-      "Đổi trả trong 7 ngày với hàng có sẵn còn nguyên trạng. Lỗi do nhà sản xuất được đổi mới hoặc hoàn tiền 100%.",
+      "Bảy ngày đầu, hàng còn nguyên như lúc nhận thì đổi trả được. Lỗi từ xưởng thì đổi cái mới hoặc trả lại đủ tiền.",
     updated: "01/07/2026",
     sections: [
       {
         heading: "Điều kiện đổi trả",
         bullets: [
-          "Trong vòng 7 ngày kể từ ngày nhận hàng.",
-          "Sản phẩm còn nguyên trạng, chưa qua sử dụng, không trầy xước hay ám mùi.",
-          "Còn đủ bao bì, phụ kiện, tem mác và hoá đơn mua hàng.",
+          "Trong 7 ngày tính từ hôm nhận hàng.",
+          "Đồ còn như lúc mới nhận: chưa dùng, không xước, không ám mùi thuốc lá hay thức ăn.",
+          "Còn giữ thùng, phụ kiện đi kèm, tem mác và hoá đơn.",
         ],
       },
       {
         heading: "Trường hợp được đổi mới hoặc hoàn tiền 100%",
         bullets: [
-          "Hàng giao sai mẫu, sai màu, sai kích thước so với đơn đã xác nhận.",
-          "Lỗi kỹ thuật từ nhà sản xuất: khung lỏng, mối ghép hở, motor không hoạt động, vải rách.",
-          "Hư hỏng phát sinh trong quá trình vận chuyển và lắp đặt.",
+          "Giao nhầm mẫu, nhầm màu, sai số đo so với đơn bạn đã chốt.",
+          "Lỗi từ xưởng: khung lỏng lẻo, mối ghép hở khe, motor không chạy, vải bị rách.",
+          "Hỏng trong lúc chở đi hoặc lúc thợ lắp.",
         ],
         paragraphs: [
-          "Với các trường hợp này chúng tôi chịu toàn bộ chi phí vận chuyển hai chiều và xử lý trong 3–7 ngày làm việc.",
+          "Mấy trường hợp này chúng tôi chịu tiền xe cả lượt đi lẫn lượt về, giải quyết xong trong 3–7 ngày làm việc.",
         ],
       },
       {
         heading: "Trường hợp không áp dụng đổi trả",
         bullets: [
-          "Sản phẩm đặt sản xuất riêng theo kích thước, màu sắc hoặc chất liệu khách yêu cầu.",
-          "Sản phẩm đã qua sử dụng, có dấu hiệu va đập, ẩm mốc do bảo quản sai.",
-          "Sản phẩm trong chương trình thanh lý, hàng trưng bày đã ghi rõ 'không áp dụng đổi trả'.",
-          "Đồ trang trí nhỏ, gối, thảm đã bóc tem vệ sinh.",
+          "Hàng đóng riêng theo số đo, màu hay chất liệu bạn yêu cầu — làm xong không bán lại cho ai được.",
+          "Hàng đã dùng, có vết va đập, hoặc mốc do để chỗ ẩm.",
+          "Hàng thanh lý và hàng trưng bày, những món đã ghi sẵn 'không áp dụng đổi trả'.",
+          "Gối, thảm, đồ trang trí nhỏ đã bóc tem vệ sinh.",
         ],
       },
       {
         heading: "Đổi sang sản phẩm khác",
         paragraphs: [
-          "Bạn được đổi sang sản phẩm khác cùng hoặc cao hơn giá trị, chỉ bù phần chênh lệch. Nếu sản phẩm mới rẻ hơn, phần chênh được hoàn lại. Mỗi đơn hàng được đổi một lần và chúng tôi hỗ trợ chi phí vận chuyển 50%.",
+          "Đổi sang món khác bằng giá hoặc đắt hơn thì bù phần chênh. Món mới rẻ hơn thì chúng tôi trả lại tiền thừa. Mỗi đơn đổi được một lần, tiền xe chúng tôi đỡ cho một nửa.",
         ],
       },
       {
         heading: "Quy trình",
         bullets: [
-          "Bước 1: Gọi hotline 0931 619 177 hoặc nhắn tin kèm mã đơn và ảnh sản phẩm.",
-          "Bước 2: Chúng tôi phản hồi trong 24 giờ làm việc và hẹn lịch tới kiểm tra.",
-          "Bước 3: Thu hồi sản phẩm và xử lý đổi mới hoặc hoàn tiền trong 3–7 ngày làm việc.",
-          "Bước 4: Tiền hoàn về đúng phương thức bạn đã thanh toán.",
+          "Một: gọi 0931 619 177 hoặc nhắn tin, gửi kèm mã đơn với vài tấm ảnh chụp món hàng.",
+          "Hai: trong 24 giờ làm việc chúng tôi trả lời và hẹn ngày tới tận nơi xem.",
+          "Ba: chở hàng về, đổi mới hoặc hoàn tiền trong 3–7 ngày làm việc.",
+          "Bốn: tiền trả lại đúng đường bạn đã thanh toán lúc mua.",
         ],
       },
     ],
@@ -108,49 +108,49 @@ export const policies: Policy[] = [
     slug: "bao-hanh",
     title: "Chính sách bảo hành",
     summary:
-      "Bảo hành 2 năm tiêu chuẩn, tới 5 năm với gỗ tự nhiên và da thật. Bảo trì miễn phí trọn đời sản phẩm.",
+      "Mặc định 2 năm, riêng gỗ tự nhiên và da thật là 5 năm. Hết hạn rồi vẫn gọi thợ tới sửa vặt được, không tính công.",
     updated: "01/07/2026",
     sections: [
       {
         heading: "Thời hạn bảo hành",
         bullets: [
-          "Nội thất gỗ tự nhiên, sofa da thật: 5 năm phần khung.",
-          "Bàn nâng hạ điện, ghế công thái học: 3 năm bao gồm motor và cơ cấu.",
+          "Đồ gỗ tự nhiên và sofa da thật: 5 năm cho phần khung.",
+          "Bàn nâng hạ điện, ghế công thái học: 3 năm, tính cả motor và bộ cơ.",
           "Sofa vải, giường, tủ kệ, bàn ăn: 2 năm.",
-          "Đèn chiếu sáng: 2 năm phần điện.",
+          "Đèn: 2 năm cho phần điện.",
           "Thảm, gương, tranh: 1 năm.",
-          "Đồ gốm thủ công: không áp dụng bảo hành do đặc thù sản phẩm.",
+          "Đồ gốm làm tay: không bảo hành, vì gốm vỡ là vỡ, không sửa lại được.",
         ],
       },
       {
         heading: "Bảo hành bao gồm",
         bullets: [
-          "Lỗi kết cấu: khung gãy, mối ghép bung, chân lung lay không do va đập.",
-          "Lỗi cơ cấu: ray kéo kẹt, bản lề hỏng, motor nâng hạ không chạy, cơ cấu ngả ghế hỏng.",
-          "Lỗi bề mặt do sản xuất: bong veneer, nứt sơn, đường may bung.",
-          "Lỗi linh kiện điện: driver LED, công tắc, cổng sạc.",
+          "Phần khung: gãy, mối ghép bung ra, chân lung lay mà không phải do va đập.",
+          "Phần cơ: ray kéo bị kẹt, bản lề hỏng, motor nâng hạ đứng máy, lẫy ngả ghế không ăn.",
+          "Bề mặt lỗi từ lúc sản xuất: veneer bong, sơn nứt, đường chỉ may bung.",
+          "Đồ điện: driver đèn LED, công tắc, cổng sạc.",
         ],
       },
       {
         heading: "Bảo hành không bao gồm",
         bullets: [
-          "Hao mòn tự nhiên: phai màu vải theo thời gian, mút xẹp nhẹ sau nhiều năm dùng.",
-          "Hư hỏng do va đập, kéo lê, quá tải trọng cho phép.",
-          "Hư hỏng do ẩm mốc vì đặt nơi ngập nước hoặc ẩm thường xuyên.",
-          "Hư hỏng do vật nuôi cào cắn, do trẻ vẽ bẩn.",
-          "Sản phẩm đã tự ý tháo, sửa chữa hoặc thay linh kiện bên ngoài.",
+          "Cũ đi theo thời gian: vải bạc màu, mút xẹp nhẹ sau nhiều năm ngồi.",
+          "Va đập, kéo lê trên sàn, hoặc chất nặng quá tải trọng ghi trên trang sản phẩm.",
+          "Mốc do kê chỗ ngập nước hay ẩm quanh năm.",
+          "Chó mèo cào cắn, trẻ vẽ bậy lên.",
+          "Đồ đã tự tháo ra sửa hoặc thay linh kiện ở ngoài.",
         ],
       },
       {
         heading: "Bảo trì miễn phí trọn đời",
         paragraphs: [
-          "Ngoài thời hạn bảo hành, chúng tôi vẫn hỗ trợ siết ốc, chỉnh cánh tủ, cân bằng chân bàn miễn phí trọn đời sản phẩm tại khu vực nội thành Gia Lai và TP.HCM. Bạn chỉ trả chi phí linh kiện nếu cần thay thế.",
+          "Hết hạn bảo hành rồi, cần siết lại ốc, chỉnh cánh tủ cho khít hay cân lại chân bàn thì cứ gọi — thợ tới làm không lấy công, trong nội thành Gia Lai và TP.HCM, không giới hạn số lần. Chỉ khi phải thay linh kiện thì bạn trả tiền linh kiện đó.",
         ],
       },
       {
         heading: "Cách kích hoạt bảo hành",
         paragraphs: [
-          "Hoá đơn mua hàng chính là phiếu bảo hành. Bạn không cần đăng ký thêm — chỉ cần cung cấp số điện thoại đặt hàng, chúng tôi tra được toàn bộ lịch sử. Gọi 0931 619 177 để đặt lịch kỹ thuật viên.",
+          "Không có phiếu bảo hành riêng, cũng không phải đăng ký gì. Hoá đơn mua hàng là đủ, mà mất hoá đơn cũng không sao — đọc số điện thoại lúc đặt là chúng tôi tra ra ngày mua với món đã mua. Gọi 0931 619 177 để hẹn thợ.",
         ],
       },
     ],
@@ -159,38 +159,38 @@ export const policies: Policy[] = [
     slug: "thanh-toan",
     title: "Chính sách thanh toán",
     summary:
-      "Nhận tiền mặt khi giao hàng, chuyển khoản, thẻ và trả góp 0% qua thẻ tín dụng của 12 ngân hàng.",
+      "Trả tiền mặt lúc nhận, chuyển khoản, quẹt thẻ, hoặc chia nhỏ 0% lãi qua thẻ tín dụng của 12 ngân hàng.",
     updated: "01/07/2026",
     sections: [
       {
         heading: "Các hình thức thanh toán",
         bullets: [
-          "Tiền mặt khi nhận hàng (COD) — áp dụng cho đơn dưới 30 triệu.",
-          "Chuyển khoản ngân hàng — đơn từ 30 triệu vui lòng đặt cọc 30% trước khi giao.",
-          "Thẻ ATM nội địa, Visa, Mastercard, JCB qua máy POS mang tới tận nơi.",
+          "Tiền mặt lúc nhận hàng — áp dụng cho đơn dưới 30 triệu.",
+          "Chuyển khoản — đơn từ 30 triệu thì cọc trước 30% rồi mới xếp lịch giao.",
+          "Quẹt thẻ ATM nội địa, Visa, Mastercard, JCB — thợ mang máy POS tới tận nhà.",
           "Ví điện tử: MoMo, ZaloPay, VNPay.",
-          "Trả góp 0% lãi suất kỳ hạn 3–12 tháng qua thẻ tín dụng.",
+          "Chia nhỏ 0% lãi qua thẻ tín dụng, kỳ hạn 3–12 tháng.",
         ],
       },
       {
         heading: "Đặt cọc với hàng đặt sản xuất",
         paragraphs: [
-          "Sản phẩm đặt sản xuất theo yêu cầu cần đặt cọc 50% giá trị đơn hàng để bắt đầu sản xuất, phần còn lại thanh toán khi nhận hàng. Tiền cọc được hoàn 100% nếu chúng tôi giao trễ quá 15 ngày so với cam kết.",
+          "Hàng đóng riêng theo yêu cầu thì cọc 50% để xưởng vào gỗ, nửa còn lại trả khi nhận. Nếu chúng tôi giao trễ quá 15 ngày so với ngày đã hẹn, tiền cọc trả lại đủ 100%, bạn không phải đòi.",
         ],
       },
       {
         heading: "Trả góp 0%",
         bullets: [
-          "Áp dụng cho đơn hàng từ 3 triệu đồng.",
-          "Hỗ trợ thẻ tín dụng của 12 ngân hàng: Vietcombank, Techcombank, VPBank, ACB, TPBank, VIB, MB, Sacombank, HSBC, Shinhan, Standard Chartered, Citibank.",
-          "Kỳ hạn 3, 6, 9 hoặc 12 tháng tuỳ ngân hàng và giá trị đơn.",
-          "Không phát sinh phí chuyển đổi, số tiền trả hàng tháng đúng bằng giá niêm yết chia đều.",
+          "Đơn từ 3 triệu trở lên mới dùng được.",
+          "Nhận thẻ tín dụng của 12 ngân hàng: Vietcombank, Techcombank, VPBank, ACB, TPBank, VIB, MB, Sacombank, HSBC, Shinhan, Standard Chartered, Citibank.",
+          "Chọn 3, 6, 9 hay 12 tháng, tuỳ ngân hàng và số tiền đơn hàng.",
+          "Không có phí chuyển đổi giấu ở đâu cả: lấy giá niêm yết chia đều cho số tháng, ra bao nhiêu trả bấy nhiêu.",
         ],
       },
       {
         heading: "Hoá đơn",
         paragraphs: [
-          "Chúng tôi xuất hoá đơn điện tử cho mọi đơn hàng. Nếu cần xuất hoá đơn công ty, vui lòng cung cấp thông tin doanh nghiệp ngay khi đặt hàng — chúng tôi không xuất hoá đơn bổ sung sau khi đã hoàn tất đơn quá 30 ngày theo quy định thuế.",
+          "Đơn nào cũng có hoá đơn điện tử. Cần hoá đơn mang tên công ty thì đưa thông tin doanh nghiệp ngay lúc đặt — quá 30 ngày kể từ khi đơn hoàn tất thì luật thuế không cho xuất bù, chúng tôi cũng đành chịu.",
         ],
       },
     ],
@@ -199,50 +199,50 @@ export const policies: Policy[] = [
     slug: "bao-mat",
     title: "Chính sách bảo mật thông tin",
     summary:
-      "Chúng tôi chỉ thu thập thông tin cần thiết để giao hàng và chăm sóc sau bán, không bán dữ liệu cho bên thứ ba.",
+      "Chúng tôi chỉ hỏi những gì cần để giao được hàng và bảo hành về sau. Dữ liệu của bạn không đem bán cho ai.",
     updated: "01/07/2026",
     sections: [
       {
         heading: "Thông tin chúng tôi thu thập",
         bullets: [
-          "Họ tên, số điện thoại, địa chỉ giao hàng — để thực hiện đơn hàng.",
-          "Email — để gửi xác nhận đơn và thông tin bảo hành.",
-          "Lịch sử mua hàng — để tra cứu bảo hành và hỗ trợ sau bán.",
-          "Dữ liệu duyệt web ẩn danh — để cải thiện trải nghiệm trên website.",
+          "Tên, số điện thoại, địa chỉ — không có thì không giao hàng tới nơi được.",
+          "Email — để gửi xác nhận đơn và giấy tờ bảo hành.",
+          "Những gì bạn đã mua — để sau này tra bảo hành mà không cần bạn giữ hoá đơn.",
+          "Số liệu duyệt web không gắn tên ai — để biết trang nào khó dùng mà sửa.",
         ],
       },
       {
         heading: "Mục đích sử dụng",
         bullets: [
-          "Xử lý, giao và lắp đặt đơn hàng.",
-          "Liên hệ xác nhận lịch giao và hỗ trợ kỹ thuật.",
-          "Thực hiện nghĩa vụ bảo hành, đổi trả.",
-          "Gửi thông tin khuyến mãi — chỉ khi bạn đồng ý và có thể huỷ bất cứ lúc nào.",
+          "Làm đơn, chở hàng và lắp tại nhà bạn.",
+          "Gọi hẹn giờ giao, gọi hỗ trợ khi đồ có vấn đề.",
+          "Làm bảo hành và đổi trả khi cần.",
+          "Nhắn tin khuyến mãi — chỉ khi bạn đồng ý, và muốn dừng lúc nào cũng được.",
         ],
       },
       {
         heading: "Chia sẻ thông tin",
         paragraphs: [
-          "Chúng tôi không bán, trao đổi hay cho thuê thông tin cá nhân của bạn. Dữ liệu chỉ được chia sẻ với đơn vị vận chuyển và đơn vị thanh toán ở mức tối thiểu cần thiết để hoàn tất đơn hàng, hoặc khi có yêu cầu hợp pháp từ cơ quan nhà nước có thẩm quyền.",
+          "Chúng tôi không bán, không đổi, không cho thuê thông tin của bạn cho bất kỳ ai. Bên vận chuyển chỉ nhận đúng tên, số điện thoại và địa chỉ để giao được hàng; cổng thanh toán chỉ nhận đúng phần họ cần để trừ tiền. Ngoài ra chỉ giao nộp khi cơ quan nhà nước yêu cầu đúng thủ tục pháp luật.",
         ],
       },
       {
         heading: "Lưu trữ và bảo mật",
         bullets: [
-          "Dữ liệu được lưu trên máy chủ đặt tại Việt Nam, mã hoá khi truyền tải qua HTTPS.",
-          "Thông tin thẻ thanh toán do đối tác cổng thanh toán xử lý, chúng tôi không lưu số thẻ.",
-          "Thời gian lưu trữ: 5 năm kể từ giao dịch cuối, phục vụ nghĩa vụ bảo hành và kế toán.",
+          "Dữ liệu nằm trên máy chủ đặt ở Việt Nam, đường truyền mã hoá HTTPS.",
+          "Số thẻ ngân hàng do cổng thanh toán giữ, chúng tôi không lưu lại con số nào.",
+          "Giữ trong 5 năm tính từ lần mua gần nhất, để còn làm bảo hành và sổ sách kế toán.",
         ],
       },
       {
         heading: "Quyền của bạn",
         bullets: [
-          "Yêu cầu xem, chỉnh sửa hoặc xoá thông tin cá nhân của mình.",
-          "Rút lại sự đồng ý nhận thông tin tiếp thị bất cứ lúc nào.",
-          "Khiếu nại về việc sử dụng dữ liệu qua email lienhe@noithatht.vn.",
+          "Đòi xem, sửa hoặc xoá hẳn thông tin của mình.",
+          "Rút lại việc đồng ý nhận tin khuyến mãi, lúc nào cũng được.",
+          "Khiếu nại nếu thấy dữ liệu bị dùng sai, gửi về lienhe@noithatht.vn.",
         ],
         paragraphs: [
-          "Chúng tôi phản hồi mọi yêu cầu liên quan tới dữ liệu cá nhân trong vòng 5 ngày làm việc.",
+          "Mọi yêu cầu liên quan tới dữ liệu cá nhân, chúng tôi trả lời trong 5 ngày làm việc.",
         ],
       },
     ],

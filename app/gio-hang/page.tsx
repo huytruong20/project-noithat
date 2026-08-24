@@ -44,9 +44,9 @@ export default function CartPage() {
           <div className="mt-10 h-40 animate-pulse border border-line bg-white/60" />
         ) : lines.length === 0 ? (
           <div className="mt-10 border border-dashed border-line bg-white py-16 text-center">
-            <p className="font-display text-xl">Giỏ hàng đang trống</p>
+            <p className="font-display text-xl">Chưa có gì trong giỏ</p>
             <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted">
-              Bạn chưa chọn món nào. Xem thử những mẫu bán chạy dưới đây, hoặc gọi
+              Bạn chưa bỏ món nào vào. Ngó thử mấy mẫu bán chạy bên dưới, hoặc gọi
               0931 619 177 để được tư vấn theo diện tích nhà bạn.
             </p>
             <Link href="/danh-muc" className="btn btn-primary mt-6">
@@ -167,10 +167,10 @@ export default function CartPage() {
               ))}
             </div>
 
-            {/* Tóm tắt đơn hàng */}
+            {/* Bạn phải trả bao nhiêu */}
             <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
               <div className="border border-line bg-white p-6">
-                <h2 className="font-display text-xl">Tóm tắt đơn hàng</h2>
+                <h2 className="font-display text-xl">Bạn phải trả bao nhiêu</h2>
 
                 {/* Mã giảm giá */}
                 <div className="mt-5 border-b border-line pb-5">
@@ -224,14 +224,14 @@ export default function CartPage() {
                 </Link>
 
                 <ul className="mt-6 space-y-2 border-t border-line pt-5 text-xs text-muted">
-                  <li>✓ Miễn phí giao &amp; lắp đặt nội thành Gia Lai – TP.HCM</li>
+                  <li>✓ Nội thành Gia Lai – TP.HCM: không tính tiền giao và lắp</li>
                   <li>✓ Đổi trả trong 7 ngày nếu còn nguyên trạng</li>
                   <li>✓ Trả góp 0% qua thẻ tín dụng 12 ngân hàng</li>
                 </ul>
               </div>
 
               <div className="mt-4 border border-line bg-sand p-5 text-sm">
-                <p className="font-semibold">Cần tư vấn thêm?</p>
+                <p className="font-semibold">Còn phân vân chỗ nào?</p>
                 <p className="mt-1 leading-relaxed text-muted">
                   Gọi <a href="tel:0931619177" className="font-semibold text-walnut">0931 619 177</a>{" "}
                   (8:00 – 20:00) để kiểm tra kích thước và lịch giao trước khi đặt.
@@ -248,7 +248,7 @@ export default function CartPage() {
           <div className="mb-8 flex items-end justify-between gap-4">
             <div>
               <p className="eyebrow mb-2">Có thể bạn cần</p>
-              <h2 className="text-2xl">Khách thường mua kèm</h2>
+              <h2 className="text-2xl">Mua món này hay lấy thêm</h2>
             </div>
             <Link href="/danh-muc" className="text-sm font-semibold text-walnut hover:underline">
               Xem tất cả →

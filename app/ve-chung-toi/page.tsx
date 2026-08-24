@@ -7,48 +7,48 @@ import { SceneImage } from "@/components/ui/ProductImage";
 export const metadata: Metadata = {
   title: "Về chúng tôi",
   description:
-    "Nội thất HT là xưởng nội thất gỗ tại Gia Lai và TP.HCM, làm đồ để dùng lâu dài với vật liệu công bố minh bạch.",
+    "Xưởng mộc ở An Khê, Gia Lai và showroom TP.HCM. Đóng đồ gỗ dùng lâu năm, ghi rõ vật liệu để khách kiểm được.",
 };
 
 const timeline = [
   {
     year: "2016",
-    title: "Bắt đầu từ một xưởng mộc nhỏ",
-    text: "Ba người thợ, một xưởng 200m² ở An Khê, nhận đóng đồ theo yêu cầu cho khách quen giới thiệu nhau.",
+    title: "Ba người thợ và một cái xưởng 200m²",
+    text: "Không quảng cáo, không biển hiệu. Khách quen giới thiệu nhau tới đặt đóng tủ, đóng giường theo số đo nhà mình.",
   },
   {
     year: "2019",
-    title: "Mở showroom đầu tiên",
-    text: "Khách muốn ngồi thử trước khi mua. Chúng tôi mở showroom đầu tiên tại An Khê để trưng bày các mẫu tiêu chuẩn.",
+    title: "Mở chỗ cho khách ngồi thử",
+    text: "Nghe tả thì khó hình dung, ngồi vào mới biết cao thấp có vừa không. Chúng tôi mở showroom tại An Khê bày sẵn các mẫu làm nhiều nhất.",
   },
   {
     year: "2022",
-    title: "Vào thị trường phía Nam",
-    text: "Showroom TP.HCM đi vào hoạt động cùng kho trung chuyển, rút thời gian giao hàng miền Nam xuống 3–5 ngày.",
+    title: "Xuống Sài Gòn",
+    text: "Mở showroom TP.HCM kèm một kho trung chuyển. Khách miền Nam từ đó nhận hàng trong 3–5 ngày thay vì chờ xe từ Gia Lai vào.",
   },
   {
     year: "2025",
-    title: "Hơn 400 dự án bàn giao",
-    text: "Từ căn hộ 45m² tới văn phòng 320m². Đội lắp đặt riêng, không thuê ngoài, để kiểm soát chất lượng cuối cùng.",
+    title: "Hơn 400 căn đã lắp xong",
+    text: "Nhỏ nhất là căn hộ 45m², lớn nhất là văn phòng 320m². Thợ lắp là người của công ty, không gọi thầu phụ — khâu cuối cùng khách nhìn thấy phải do mình chịu trách nhiệm.",
   },
 ];
 
 const principles = [
   {
-    title: "Công bố đúng vật liệu",
-    text: "Ghi rõ loại gỗ, độ dày mút, tỷ trọng, xuất xứ phụ kiện. Nếu sai lệch so với công bố, chúng tôi hoàn tiền 100% chứ không đổi hàng cho qua chuyện.",
+    title: "Ghi gì thì đúng cái đó",
+    text: "Loại gỗ, mút dày mấy phân, tỷ trọng bao nhiêu, phụ kiện của hãng nào — ghi hết trên trang sản phẩm. Bạn cầm thước đo lại thấy lệch thì chúng tôi trả đủ tiền, không mặc cả đổi món khác cho qua.",
   },
   {
-    title: "Tư vấn cả khi bạn không nên mua",
-    text: "Nếu món đồ không lọt cửa nhà bạn hoặc không hợp diện tích, nhân viên sẽ nói thẳng và gợi ý mẫu khác — kể cả mẫu rẻ hơn.",
+    title: "Nói thẳng cả khi mất đơn",
+    text: "Món đồ không lọt cửa, kê vào thì chật lối đi, hay đơn giản là quá khổ so với phòng — nhân viên nói thẳng và chỉ mẫu khác, kể cả mẫu rẻ hơn nhiều. Bán được một lần rồi khách bực thì không đáng.",
   },
   {
-    title: "Đội lắp đặt là người của công ty",
-    text: "Không thuê ngoài theo đơn. Thợ được đào tạo và chịu trách nhiệm tới cùng, nên chất lượng lắp đặt không phụ thuộc may rủi.",
+    title: "Thợ lắp ăn lương công ty",
+    text: "Không gọi thầu phụ theo từng đơn. Thợ được dạy nghề tại chỗ và theo món hàng tới lúc bạn ký nhận, nên gặp phải kíp cẩu thả hay kíp tử tế không còn là chuyện hên xui.",
   },
   {
-    title: "Sửa được thì sửa, không đẩy sang mua mới",
-    text: "Bảo trì miễn phí trọn đời sản phẩm. Ốc lỏng, cánh xệ, chân cập kênh — gọi là có người tới, kể cả đã hết bảo hành nhiều năm.",
+    title: "Sửa được thì sửa",
+    text: "Ốc lỏng, cánh tủ xệ, chân bàn cập kênh — gọi là có thợ tới, không tính công, kể cả khi đã hết bảo hành mấy năm. Chúng tôi không lấy cái hỏng vặt làm cớ mời bạn mua đồ mới.",
   },
 ];
 
@@ -62,13 +62,12 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow mb-3">Về {site.name}</p>
             <h1 className="text-3xl leading-tight md:text-4xl">
-              Chúng tôi làm đồ gỗ để dùng mười năm, không phải để bán một lần.
+              Đóng một cái tủ mất ba ngày. Nó phải đứng được mười năm.
             </h1>
             <p className="mt-5 text-[15px] leading-relaxed text-muted">
-              Nội thất HT bắt đầu năm 2016 từ một xưởng mộc nhỏ ở An Khê. Đến nay chúng tôi
-              có hai showroom, một xưởng sản xuất và đội lắp đặt riêng — nhưng cách làm
-              vẫn như cũ: nói đúng vật liệu, làm chắc mối ghép, và có mặt khi khách cần
-              sửa.
+              Năm 2016 chỗ này còn là cái xưởng mộc 200m² ở An Khê với ba người thợ. Bây giờ
+              có thêm hai showroom và đội lắp đặt riêng, nhưng ba việc thì vẫn làm y như
+              hồi đó: nói đúng loại gỗ, ghép mộng cho chắc, và khi khách gọi sửa thì có mặt.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/danh-muc" className="btn btn-primary">
@@ -99,9 +98,9 @@ export default function AboutPage() {
         <div className="shell grid grid-cols-2 gap-8 py-10 md:grid-cols-4">
           {[
             { value: "2016", label: "Năm thành lập" },
-            { value: "400+", label: "Dự án đã bàn giao" },
+            { value: "400+", label: "Căn nhà đã lắp" },
             { value: "2", label: "Showroom Gia Lai – TP.HCM" },
-            { value: "5 năm", label: "Bảo hành tối đa" },
+            { value: "5 năm", label: "Bảo hành gỗ tự nhiên" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="font-display text-3xl font-semibold">{stat.value}</p>
@@ -115,7 +114,7 @@ export default function AboutPage() {
       <section className="shell py-14 md:py-20">
         <div className="mb-10 max-w-2xl">
           <p className="eyebrow mb-2">Cách chúng tôi làm việc</p>
-          <h2 className="text-2xl md:text-3xl">Bốn nguyên tắc không thoả hiệp</h2>
+          <h2 className="text-2xl md:text-3xl">Bốn điều không đổi từ ngày đầu</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {principles.map((item, index) => (
@@ -133,7 +132,7 @@ export default function AboutPage() {
         <div className="shell">
           <div className="mb-10 max-w-2xl">
             <p className="eyebrow mb-2">Chặng đường</p>
-            <h2 className="text-2xl md:text-3xl">Từ xưởng mộc tới hai showroom</h2>
+            <h2 className="text-2xl md:text-3xl">Mười năm, từ ba người thợ</h2>
           </div>
           <ol className="grid gap-6 md:grid-cols-4">
             {timeline.map((item) => (
@@ -151,10 +150,10 @@ export default function AboutPage() {
       <section className="border-t border-line bg-ink py-14 text-white md:py-16">
         <div className="shell">
           <p className="eyebrow mb-2 text-white/60">Ghé thăm</p>
-          <h2 className="text-2xl text-white md:text-3xl">Ngồi thử trước khi mua</h2>
+          <h2 className="text-2xl text-white md:text-3xl">Cứ tới ngồi thử đã</h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70">
-            Ảnh không thay được cảm giác ngồi. Cả hai showroom đều trưng bày đầy đủ các
-            mẫu bán chạy, mở cửa cả cuối tuần và không cần đặt lịch trước.
+            Nhìn ảnh không biết được đệm cứng hay mềm, tựa lưng cao hay thấp. Hai showroom
+            bày sẵn các mẫu bán nhiều nhất, mở cả thứ Bảy Chủ nhật, cứ tới không cần hẹn.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">

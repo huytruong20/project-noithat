@@ -141,9 +141,9 @@ export const products: Product[] = [
     price: 14900000,
     oldPrice: 17500000,
     isBestSeller: true,
-    short: "Sofa văng 3 chỗ khung sồi sấy, vỏ bọc tháo giặt được.",
+    short: "Ba chỗ ngồi, khung sồi sấy, vỏ bọc lột ra giặt máy.",
     description:
-      "Mila là mẫu bán chạy nhất của chúng tôi ba năm liền. Khung gỗ sồi sấy 12% độ ẩm nên không cong vênh trong mùa nồm miền Bắc. Đệm ngồi mút D40 dày 12cm giữ form sau nhiều năm sử dụng, phần tựa dùng mút D25 mềm hơn để lưng thoải mái. Toàn bộ vỏ bọc có khoá kéo giấu, tháo ra giặt máy ở chế độ nhẹ.",
+      "Ba năm liền Mila là mẫu bán nhiều nhất ở đây. Gỗ sồi làm khung đã sấy xuống 12% ẩm, để qua mùa nồm không cong không nứt. Chỗ ngồi dùng mút D40 dày 12cm nên ngồi mấy năm vẫn còn nảy; phần tựa lưng để mút D25 mềm hơn cho êm. Vỏ bọc có khoá kéo giấu dưới mép, lột ra ném vào máy giặt chế độ nhẹ là xong.",
     dimensions: { long: 220, wide: 90, high: 82 },
     materials: ["Khung gỗ sồi sấy", "Mút D40 đàn hồi cao", "Vải bố chống bám bụi"],
     colors: [
@@ -167,9 +167,9 @@ export const products: Product[] = [
     category: "sofa",
     rooms: ["phong-khach"],
     price: 24500000,
-    short: "Sofa góc trái/phải đổi được, kèm đôn chân rời.",
+    short: "Góc lắp được cả hai bên, kèm đôn chân rời.",
     description:
-      "Orin dành cho phòng khách từ 20m² trở lên. Phần góc lắp được cả bên trái lẫn bên phải nên không cần đo trước khi đặt. Đôn chân rời có thể kéo ra làm chỗ ngồi phụ khi nhà đông khách, hoặc đẩy vào tạo mặt nằm dài 1m8.",
+      "Orin hợp phòng khách từ 20m² trở lên. Phần góc lắp bên trái hay bên phải đều được nên bạn khỏi phải đo xem cửa nằm phía nào trước khi đặt. Cái đôn rời kéo ra là thêm một chỗ ngồi lúc nhà đông người, đẩy vào sát thì thành mặt nằm dài 1m8 để duỗi chân xem phim.",
     dimensions: { long: 285, wide: 165, high: 84 },
     materials: ["Khung gỗ thông sấy", "Mút D40", "Vải nhung tăm chống nước"],
     colors: [
@@ -195,9 +195,9 @@ export const products: Product[] = [
     rooms: ["phong-khach", "can-ho-nho"],
     price: 12900000,
     isNew: true,
-    short: "Kéo phẳng thành giường 1m4 trong 5 giây, có hộc chứa chăn.",
+    short: "Một tay kéo thành giường 1m4, dưới đệm có hộc chứa chăn.",
     description:
-      "Koda là lời giải cho căn hộ nhỏ hay phòng khách kiêm phòng ngủ cho khách. Cơ cấu kéo trượt bằng thép sơn tĩnh điện, một tay kéo là mặt ngồi phẳng thành giường 1m4 × 1m9. Dưới mặt ngồi có hộc chứa sâu 18cm vừa đủ một bộ chăn gối mùa đông.",
+      "Nhà một phòng ngủ mà thỉnh thoảng có khách ngủ lại thì Koda giải quyết gọn. Bộ ray trượt bằng thép sơn tĩnh điện, kéo một tay là mặt ngồi duỗi phẳng thành 1m4 × 1m9, mất chừng năm giây. Dưới mặt ngồi có hộc sâu 18cm, nhét vừa một bộ chăn gối mùa đông.",
     dimensions: { long: 190, wide: 95, high: 80 },
     materials: ["Khung thép sơn tĩnh điện", "Mút D35", "Vải linen pha"],
     colors: [
@@ -220,9 +220,9 @@ export const products: Product[] = [
     category: "sofa",
     rooms: ["phong-khach", "can-ho-nho"],
     price: 6900000,
-    short: "Sofa 2 chỗ chỉ rộng 1m4, vừa phòng trọ và căn hộ studio.",
+    short: "Chỉ rộng 1m4 mà mặt ngồi vẫn sâu 52cm.",
     description:
-      "Yuki sinh ra cho những căn phòng mà sofa tiêu chuẩn kê vào là hết lối đi. Rộng đúng 1m4 nhưng mặt ngồi vẫn sâu 52cm nên ngồi không bị hụt. Chân gỗ tháo rời, khi chuyển nhà tháo ra là lọt thang máy nhỏ.",
+      "Phòng trọ hay studio kê sofa thường vào là hết lối đi. Yuki rộng đúng 1m4 nhưng mặt ngồi giữ nguyên 52cm chiều sâu, ngồi không bị hụt mông như mấy mẫu thu nhỏ. Bốn chân gỗ vặn ra được, lúc chuyển nhà tháo chân là lọt thang máy chung cư cũ.",
     dimensions: { long: 140, wide: 78, high: 76 },
     materials: ["Khung gỗ cao su sấy", "Mút D35", "Vải bố dệt dày"],
     colors: [
@@ -248,9 +248,9 @@ export const products: Product[] = [
     rooms: ["phong-khach"],
     price: 21500000,
     isNew: true,
-    short: "Ba khối rời ghép tuỳ ý, đổi bố cục khi chuyển nhà không phải mua mới.",
+    short: "Ba khối rời, xếp kiểu nào cũng được, mua thêm khối sau vẫn khớp.",
     description:
-      "Piko gồm ba khối độc lập nối bằng ngàm thép giấu dưới đệm. Xếp thẳng hàng thành sofa băng 2m4, xếp chữ L khi kê góc, hoặc tách rời thành ba ghế đơn khi nhà đông khách. Mua thêm khối lẻ sau này vẫn khớp — chúng tôi cam kết giữ chuẩn ngàm này lâu dài.",
+      "Piko là ba khối riêng, nối với nhau bằng ngàm thép giấu dưới đệm. Xếp thành hàng là sofa băng 2m4, bẻ vuông là sofa góc, tách hẳn ra là ba ghế đơn kê ba nơi. Chuyển nhà đổi bố cục không phải mua bộ mới. Chuẩn ngàm này chúng tôi giữ lâu dài nên vài năm nữa mua thêm khối lẻ vẫn lắp vừa.",
     dimensions: { long: 240, wide: 88, high: 74 },
     materials: ["Khung gỗ thông sấy", "Mút D40", "Vải nano chống thấm"],
     colors: [
@@ -278,9 +278,9 @@ export const products: Product[] = [
     rooms: ["phong-khach", "phong-ngu"],
     price: 5600000,
     isBestSeller: true,
-    short: "Ghế bành ôm lưng, đặt cạnh cửa sổ làm góc đọc sách.",
+    short: "Lưng ngả 105°, ngồi đọc sách lâu không mỏi cổ.",
     description:
-      "Hana có lưng ghế ôm cong 105° — góc ngả được tính để ngồi đọc sách lâu không mỏi cổ. Đệm ngồi rộng 52cm đủ ngồi khoanh chân. Nhiều khách đặt Hana ở góc phòng ngủ cạnh cửa sổ.",
+      "Lưng ghế cong ôm theo sống lưng, ngả đúng 105° — góc này tính để ngồi đọc lâu mà cổ không phải gồng. Mặt ngồi rộng 52cm nên khoanh chân lên ngồi vẫn thoải mái. Khách hay kê Hana vào góc phòng ngủ cạnh cửa sổ làm chỗ đọc buổi sáng.",
     dimensions: { long: 72, wide: 78, high: 88 },
     materials: ["Khung gỗ sồi", "Mút D40", "Vải nỉ mềm"],
     colors: [
@@ -304,9 +304,9 @@ export const products: Product[] = [
     category: "ban-ghe",
     rooms: ["phong-khach", "phong-lam-viec"],
     price: 8900000,
-    short: "Ghế ngả 3 nấc kèm đôn gác chân rời.",
+    short: "Ngả ba nấc bằng lẫy tay, không dùng điện.",
     description:
-      "Oslo ngả được 3 nấc từ 100° đến 135° bằng cách gạt lẫy bên hông, không cần motor nên không lo hỏng điện. Đôn gác chân bọc cùng chất liệu, dùng riêng làm ghế đôn khi cần.",
+      "Gạt lẫy bên hông là ngả được ba nấc, từ 100° ngồi thẳng tới 135° nằm nghỉ. Cố ý làm bằng cơ khí chứ không gắn motor: không có mạch điện thì không có gì để hỏng, mất điện vẫn dùng bình thường. Đôn gác chân bọc cùng loại da, lúc không gác thì kéo ra làm ghế đôn cho khách ngồi.",
     dimensions: { long: 76, wide: 90, high: 100 },
     materials: ["Khung gỗ óc chó", "Mút D40", "Da công nghiệp Microfiber"],
     colors: [
@@ -328,9 +328,9 @@ export const products: Product[] = [
     category: "ban-ghe",
     rooms: ["phong-khach"],
     price: 3900000,
-    short: "Mặt gỗ sồi tròn 80cm, không góc nhọn — an toàn cho nhà có trẻ nhỏ.",
+    short: "Mặt sồi tròn 80cm, không góc nhọn, xước tự chà lại được.",
     description:
-      "Bàn tròn không góc nhọn nên nhà có trẻ nhỏ dùng yên tâm, đồng thời dễ đi lại vòng quanh trong phòng khách hẹp. Mặt gỗ sồi phủ dầu lau tự nhiên, xước nhẹ có thể tự chà lại bằng giấy nhám mịn.",
+      "Bàn tròn không có góc nhọn nên nhà có trẻ đang tập đi thì yên tâm hơn hẳn, mà đi vòng quanh trong phòng khách hẹp cũng dễ. Mặt gỗ sồi phủ dầu lau Osmo chứ không sơn bóng — bị xước thì lấy giấy nhám mịn chà nhẹ rồi lau lại một lớp dầu là liền, không phải gọi thợ.",
     dimensions: { long: 80, wide: 80, high: 42 },
     materials: ["Gỗ sồi tự nhiên", "Phủ dầu lau Osmo", "Chân thép sơn tĩnh điện"],
     colors: [
@@ -353,9 +353,9 @@ export const products: Product[] = [
     rooms: ["phong-khach", "can-ho-nho"],
     price: 4500000,
     isNew: true,
-    short: "Hai bàn lồng vào nhau, tách ra khi cần thêm mặt bàn.",
+    short: "Hai cái lồng vào nhau, kéo ra khi cần thêm mặt bàn.",
     description:
-      "Bàn nhỏ trượt gọn dưới bàn lớn khi không dùng, kéo ra khi có khách. Mặt bàn lục giác tạo nhịp hình học nhẹ nhàng, chân thép mảnh 2cm không làm nặng không gian.",
+      "Ngày thường bàn nhỏ trượt gọn dưới bàn lớn chiếm đúng một chỗ. Có khách thì kéo ra thành hai mặt bàn đặt được nhiều ly. Mặt bàn cắt hình lục giác cho đỡ đơn điệu, chân thép chỉ 2cm nên nhìn nhẹ, không đè nặng góc phòng.",
     dimensions: { long: 90, wide: 55, high: 45 },
     materials: ["MDF phủ veneer sồi", "Chân thép sơn tĩnh điện"],
     colors: [
@@ -380,9 +380,9 @@ export const products: Product[] = [
     rooms: ["phong-bep-an", "can-ho-nho"],
     price: 2900000,
     oldPrice: 3400000,
-    short: "Bộ 2 ghế gỗ sồi nguyên khối, xếp chồng được khi cất.",
+    short: "Hai chiếc sồi nguyên khối, xếp chồng lên nhau khi cất.",
     description:
-      "Lưng ghế uốn cong ôm sống lưng, mặt ngồi lõm nhẹ nên ngồi ăn lâu không mỏi. Hai chiếc xếp chồng lên nhau được, tiết kiệm chỗ khi nhà ít khách. Gỗ sồi phủ dầu lau, xước nhẹ tự chà lại bằng giấy nhám mịn.",
+      "Lưng ghế uốn cong theo sống lưng, mặt ngồi khoét lõm nhẹ nên ngồi hết bữa cơm dài vẫn không mỏi. Hai chiếc chồng lên nhau được, ngày thường cất một chiếc vào góc cho rộng nhà. Gỗ sồi phủ dầu lau, xước thì chà giấy nhám mịn rồi lau dầu lại.",
     dimensions: { long: 45, wide: 52, high: 80 },
     materials: ["Gỗ sồi nguyên khối", "Dầu lau gốc thực vật"],
     colors: [
@@ -405,9 +405,9 @@ export const products: Product[] = [
     category: "ban-ghe",
     rooms: ["phong-khach"],
     price: 4200000,
-    short: "Mặt kính cường lực trong, phòng nhỏ nhìn đỡ nặng mắt.",
+    short: "Mặt kính cường lực 10mm, phòng hẹp nhìn đỡ bí.",
     description:
-      "Mặt kính trong cho ánh sáng và màu sàn xuyên qua, nên đặt trong phòng khách hẹp không tạo cảm giác bít. Kính cường lực 10mm mài cạnh vát, chịu được va chạm sinh hoạt hằng ngày. Tầng dưới bằng gỗ để tạp chí và điều khiển.",
+      "Kính trong cho nhìn xuyên xuống thấy màu sàn, nên kê giữa phòng khách nhỏ không tạo cảm giác chắn ngang như mặt gỗ đặc. Kính cường lực dày 10mm, cạnh mài vát, va chạm sinh hoạt hằng ngày không sao. Tầng dưới lót gỗ để tạp chí với điều khiển cho khỏi bày trên mặt.",
     dimensions: { long: 110, wide: 60, high: 42 },
     materials: ["Kính cường lực 10mm", "Khung gỗ sồi", "Chân thép sơn tĩnh điện"],
     colors: [
@@ -433,9 +433,9 @@ export const products: Product[] = [
     price: 16800000,
     oldPrice: 19500000,
     isBestSeller: true,
-    short: "Đầu giường bọc nệm cao 110cm, tựa lưng đọc sách thoải mái.",
+    short: "Đầu giường bọc nệm cao 110cm, tựa lưng khỏi cần chồng gối.",
     description:
-      "Đầu giường bọc mút dày 8cm cao tới 110cm nên ngồi tựa đọc sách hay xem phim không cần thêm gối. Giát giường nan gỗ cong đàn hồi, chịu lực 400kg, thoáng khí chống ẩm mốc nệm.",
+      "Đầu giường bọc mút dày 8cm, cao tới 110cm nên ngồi tựa đọc sách hay xem điện thoại là dựa thẳng vào, không phải chồng ba bốn cái gối lên. Giát nan gỗ cong có độ nhún, chịu 400kg. Nan hở nên hơi ẩm thoát được, nệm không bị hầm mốc mặt dưới.",
     dimensions: { long: 200, wide: 180, high: 110 },
     materials: ["Khung gỗ thông sấy", "Mút D30 bọc đầu giường", "Vải nỉ chống bám bụi"],
     colors: [
@@ -459,9 +459,9 @@ export const products: Product[] = [
     category: "giuong",
     rooms: ["phong-ngu"],
     price: 13500000,
-    short: "Gỗ sồi nguyên khối, mộng ghép truyền thống không dùng đinh.",
+    short: "Sồi nguyên khối, bốn góc ghép mộng, không một cây đinh.",
     description:
-      "Taiga ghép mộng âm dương ở bốn góc — kiểu ghép truyền thống chắc hơn bắt vít, càng dùng càng khít. Gỗ sồi trắng nhập khẩu, vân thẳng đều, phủ dầu lau giữ nguyên cảm giác chạm vào thớ gỗ.",
+      "Bốn góc giường ghép mộng âm dương theo lối thợ mộc cũ. Kiểu ghép này chắc hơn bắt vít và càng nằm lâu càng khít lại, không có chuyện lỏng ốc kêu cót két sau vài năm. Gỗ sồi trắng nhập khẩu vân thẳng đều, phủ dầu lau nên sờ vào còn thấy thớ gỗ chứ không trơn như phủ bóng.",
     dimensions: { long: 200, wide: 160, high: 95 },
     materials: ["Gỗ sồi trắng nguyên khối", "Dầu lau gốc thực vật"],
     colors: [
@@ -487,9 +487,9 @@ export const products: Product[] = [
     rooms: ["phong-ngu", "can-ho-nho"],
     price: 15200000,
     isNew: true,
-    short: "4 hộc kéo dưới gầm, thêm 320 lít chỗ chứa mà không tốn diện tích.",
+    short: "Bốn hộc dưới gầm, thêm 320 lít chỗ cất mà không tốn thêm mét vuông.",
     description:
-      "Bốn hộc kéo ray bi giảm chấn chia đều hai bên giường, tổng dung tích 320 lít — đủ cất chăn mùa đông, vali và đồ ít dùng. Giải pháp gọn cho căn hộ không có kho.",
+      "Bốn hộc chia đều hai bên, chạy ray bi giảm chấn nên kéo êm và không sập. Cộng lại 320 lít — đủ nhét chăn mùa đông, hai cái vali và mấy thùng đồ ít đụng tới. Căn hộ không có kho thì đây là chỗ chứa dễ kiếm nhất, vì gầm giường vốn đã bỏ không.",
     dimensions: { long: 200, wide: 160, high: 100 },
     materials: ["MDF chống ẩm lõi xanh", "Veneer sồi", "Ray bi giảm chấn"],
     colors: [
@@ -516,9 +516,9 @@ export const products: Product[] = [
     rooms: ["phong-khach"],
     price: 6700000,
     isBestSeller: true,
-    short: "Dáng thấp kéo dài, có lỗ luồn dây giấu gọn dây điện.",
+    short: "Cao 42cm, dưới tầm mắt khi ngồi sofa, có khay giấu dây.",
     description:
-      "Kệ cao 42cm — thấp hơn tầm mắt khi ngồi sofa nên tivi ở đúng độ cao xem không mỏi cổ. Mặt sau khoét hai lỗ luồn dây, bên trong có khay đi dây để không lộ mớ dây nguồn.",
+      "Kệ chỉ cao 42cm nên tivi đặt lên vừa tầm mắt người ngồi sofa, xem cả buổi không phải ngước. Mặt sau khoét hai lỗ luồn dây, bên trong có khay đi dây để dồn hết dây nguồn với dây mạng vào một chỗ, nhìn từ ngoài không thấy mớ dây.",
     dimensions: { long: 180, wide: 40, high: 42 },
     materials: ["MDF chống ẩm", "Veneer sồi", "Chân gỗ sồi khối"],
     colors: [
@@ -541,9 +541,9 @@ export const products: Product[] = [
     category: "tu-ke",
     rooms: ["can-ho-nho", "phong-khach"],
     price: 3600000,
-    short: "Cánh nan thoáng khí, chứa 18 đôi mà chỉ sâu 26cm.",
+    short: "Cánh nan hở cho giày khô, chứa 18 đôi mà chỉ sâu 26cm.",
     description:
-      "Cánh dạng nan hở giúp giày khô nhanh và không ám mùi trong tủ kín. Chiều sâu chỉ 26cm nên kê sát tường lối vào vẫn không cản đường đi.",
+      "Cánh làm dạng nan hở nên giày đi về còn ẩm vẫn khô được, không ủ mùi trong tủ kín. Sâu đúng 26cm, kê sát tường lối vào thì người xách đồ đi qua vẫn lọt. Ba khoang chia sẵn, xếp đứng được 18 đôi cỡ nam.",
     dimensions: { long: 90, wide: 26, high: 110 },
     materials: ["MDF chống ẩm", "Melamine", "Cánh nan gỗ"],
     colors: [
@@ -568,9 +568,9 @@ export const products: Product[] = [
     rooms: ["phong-ngu"],
     price: 15600000,
     oldPrice: 17900000,
-    short: "Cánh mở toàn phần, nhìn thấy hết đồ trong một lần mở.",
+    short: "Mở một lần thấy hết đồ, không như cánh lùa chỉ mở được nửa.",
     description:
-      "Khác tủ cánh lùa chỉ mở được nửa tủ một lúc, ba cánh mở của Milo cho bạn thấy toàn bộ quần áo cùng lúc — tìm đồ nhanh hơn hẳn vào buổi sáng vội. Bản lề giảm chấn đóng êm, không đập. Cần chừa 60cm trước tủ để mở cánh thoải mái.",
+      "Tủ cánh lùa lúc nào cũng che mất một nửa, sáng vội tìm cái áo phải đẩy qua đẩy lại. Ba cánh mở của Milo bật ra là thấy toàn bộ tủ cùng lúc. Bản lề giảm chấn nên đóng êm, không đập thình thịch lúc người nhà còn ngủ. Lưu ý chừa 60cm trống trước tủ để mở hết cánh.",
     dimensions: { long: 165, wide: 58, high: 210 },
     materials: ["MDF chống ẩm lõi xanh", "Melamine vân gỗ", "Bản lề giảm chấn"],
     colors: [
@@ -595,9 +595,9 @@ export const products: Product[] = [
     category: "tu-ke",
     rooms: ["phong-khach", "phong-lam-viec", "can-ho-nho"],
     price: 3800000,
-    short: "Khung thép mảnh 5 tầng, chỉ chiếm 35cm chiều sâu.",
+    short: "Khung thép mảnh 5 tầng, chỉ ăn 35cm chiều sâu.",
     description:
-      "Khung thép ống 2cm để lộ, kết hợp mặt kệ gỗ — kiểu công nghiệp nhẹ nhàng, không nặng nề như tủ kín. Sâu 35cm nên kê được ở hành lang hẹp hay khoảng tường trống giữa hai phòng. Năm tầng đủ cho sách, chậu cây nhỏ và đồ trang trí.",
+      "Khung ống thép 2cm để trần, mặt kệ lát gỗ — kiểu công nghiệp nhẹ, không nặng như tủ kín bít bùng. Sâu 35cm nên nhét được vào hành lang hẹp hay mảng tường trống giữa hai cửa phòng. Năm tầng chia đủ cho sách, vài chậu cây nhỏ và mấy món bày.",
     dimensions: { long: 80, wide: 35, high: 180 },
     materials: ["Khung thép sơn tĩnh điện", "Mặt kệ MDF phủ veneer"],
     colors: [
@@ -623,9 +623,9 @@ export const products: Product[] = [
     category: "ban-an",
     rooms: ["phong-bep-an"],
     price: 15900000,
-    short: "Một tấm gỗ liền, giữ nguyên đường vân và cạnh tự nhiên.",
+    short: "Cắt từ một tấm gỗ liền, giữ nguyên cạnh tự nhiên.",
     description:
-      "Mặt bàn cắt từ một tấm gỗ me tây liền, giữ lại đường cạnh tự nhiên (live edge) nên không tấm nào giống tấm nào. Đã xử lý chống mối và sấy kỹ, phủ 3 lớp dầu chống thấm nước canh và dầu ăn.",
+      "Mặt bàn là một tấm me tây liền, không ghép thanh, giữ lại đường cạnh cong tự nhiên của thân cây nên không tấm nào giống tấm nào. Gỗ đã xử lý mối và sấy kỹ trước khi đóng. Phủ ba lớp dầu chống thấm, đổ nước canh hay dầu ăn lên lau ngay là không ăn vào thớ.",
     dimensions: { long: 160, wide: 85, high: 75 },
     materials: ["Gỗ me tây nguyên tấm", "Dầu lau chống thấm", "Chân sắt chữ A"],
     colors: [
@@ -651,9 +651,9 @@ export const products: Product[] = [
     rooms: ["phong-bep-an"],
     price: 12800000,
     isBestSeller: true,
-    short: "Mặt ceramic chịu nhiệt 300°C, đặt nồi nóng trực tiếp không sao.",
+    short: "Mặt đá chịu 300°C, bê nồi lẩu đặt thẳng lên không sao.",
     description:
-      "Mặt đá ceramic nung ở nhiệt độ cao, đặt nồi lẩu nóng trực tiếp lên không để lại vết. Không thấm nước mắm, cà phê hay nghệ — lau bằng khăn ẩm là sạch. Lựa chọn thực tế cho gia đình Việt hay ăn món nước.",
+      "Đá ceramic nung nhiệt cao nên đặt nồi lẩu đang sôi lên mặt bàn không để lại vòng ố. Nước mắm, cà phê, nghệ đổ ra lau khăn ẩm là sạch, không ngấm. Nhà nào hay ăn món nước, hay bày nồi lên giữa bàn thì mặt này đỡ lo hơn mặt gỗ nhiều.",
     dimensions: { long: 180, wide: 90, high: 75 },
     materials: ["Đá ceramic 12mm", "Khung thép sơn tĩnh điện"],
     colors: [
@@ -678,9 +678,9 @@ export const products: Product[] = [
     rooms: ["phong-bep-an", "can-ho-nho"],
     price: 8900000,
     oldPrice: 10500000,
-    short: "Trọn bộ bàn 1m2 và 4 ghế, hợp căn hộ 2 phòng ngủ.",
+    short: "Bàn 1m2 kèm sẵn 4 ghế, khỏi đi tìm ghế hợp bộ.",
     description:
-      "Bộ hoàn chỉnh không cần phối thêm. Ghế có lưng cong ôm sống lưng, mặt ngồi lõm nhẹ nên ngồi ăn lâu vẫn dễ chịu. Bàn 1m2 vừa đủ cho gia đình 4 người.",
+      "Mua một lần là đủ bộ, không phải lọ mọ tìm ghế cho hợp màu bàn. Ghế lưng cong ôm sống lưng, mặt ngồi lõm nhẹ nên ngồi ăn lâu vẫn dễ chịu. Bàn 1m2 vừa cho nhà bốn người, kê lọt bếp căn hộ hai phòng ngủ.",
     dimensions: { long: 120, wide: 75, high: 75 },
     materials: ["Gỗ cao su sấy", "Sơn PU mờ"],
     colors: [
@@ -703,9 +703,9 @@ export const products: Product[] = [
     rooms: ["can-ho-nho", "phong-bep-an"],
     price: 5400000,
     isNew: true,
-    short: "Mở rộng từ 90cm lên 150cm khi có khách.",
+    short: "Ngày thường 90cm, có khách mở ra 150cm.",
     description:
-      "Ngày thường gấp lại còn 90cm kê sát tường cho 2–4 người; cuối tuần đông khách mở cánh phụ thành 150cm ngồi được 6 người. Cơ cấu bản lề bướm chắc, thao tác một tay.",
+      "Gấp lại còn 90cm, kê sát tường ngồi 2–4 người cho gọn nhà. Cuối tuần đông người thì lật cánh phụ ra thành 150cm, ngồi được 6. Bản lề bướm bằng thép chịu lực, một tay lật cũng được, không cần hai người khiêng.",
     dimensions: { long: 150, wide: 80, high: 75 },
     materials: ["MDF chống ẩm", "Veneer sồi", "Bản lề bướm thép"],
     colors: [
@@ -729,9 +729,9 @@ export const products: Product[] = [
     rooms: ["phong-bep-an"],
     price: 13900000,
     isBestSeller: true,
-    short: "Mâm xoay giữa bàn, cả nhà gắp món không phải với tay.",
+    short: "Mâm xoay 60cm giữa bàn, không ai phải với tay gắp.",
     description:
-      "Mâm xoay đường kính 60cm đặt giữa bàn, quay trên vòng bi nên đẩy nhẹ là xoay êm. Kiểu bàn quen thuộc của bữa cơm Việt nhiều món dùng chung — không ai phải với tay hay nhờ chuyền đĩa. Bàn tròn không góc nhọn, nhà có trẻ nhỏ dùng yên tâm.",
+      "Mâm xoay đường kính 60cm đặt giữa, chạy trên vòng bi thép nên đẩy nhẹ một cái là quay hết vòng. Mâm cơm Việt bày nhiều món dùng chung, có mâm xoay thì người ngồi xa không phải nhoài người hay nhờ chuyền đĩa. Bàn tròn không góc nhọn, trẻ chạy quanh đỡ va.",
     dimensions: { long: 120, wide: 120, high: 75 },
     materials: ["Gỗ cao su sấy", "Mâm xoay kính cường lực", "Vòng bi thép"],
     colors: [
@@ -757,9 +757,9 @@ export const products: Product[] = [
     category: "trang-tri",
     rooms: ["phong-khach", "phong-ngu"],
     price: 4200000,
-    short: "Len pha cotton dệt tay, hoa văn hình học tối giản.",
+    short: "Dệt tay, len pha cotton dày 12mm, đế chống trượt khâu liền.",
     description:
-      "Thảm dệt tay nên hai tấm không bao giờ giống hệt nhau. Sợi len pha cotton mềm chân, dày 12mm đủ ấm mùa đông mà không bí mùa hè. Đế chống trượt khâu liền.",
+      "Dệt bằng tay nên hai tấm không bao giờ giống hệt, nhìn kỹ thấy nhịp sợi hơi lệch — đó là dấu của hàng dệt thủ công, không phải lỗi. Sợi len pha cotton mềm chân, dày 12mm đủ ấm mùa lạnh mà không hầm mùa nóng. Đế chống trượt khâu liền vào thảm chứ không dán, giặt không bong.",
     dimensions: { long: 230, wide: 160, high: 1.2 },
     materials: ["Len pha cotton", "Đế chống trượt"],
     colors: [
@@ -785,9 +785,9 @@ export const products: Product[] = [
     category: "trang-tri",
     rooms: ["phong-khach", "phong-ngu"],
     price: 2100000,
-    short: "Gương treo tường viền gỗ sồi, làm phòng nhỏ trông rộng hơn.",
+    short: "Gương tròn 80cm viền sồi, treo đối diện cửa sổ cho phòng sáng hơn.",
     description:
-      "Treo đối diện cửa sổ, gương hắt ánh sáng tự nhiên vào sâu trong phòng — mẹo cũ nhưng hiệu quả với căn hộ thiếu sáng. Kính 5mm phủ lớp chống mốc viền, dùng được cả trong phòng tắm.",
+      "Treo đối diện cửa sổ thì gương hắt nắng vào sâu trong phòng — mẹo cũ nhưng với căn hộ thiếu sáng thì thấy khác biệt ngay. Kính dày 5mm, viền phủ lớp chống mốc nên treo trong phòng tắm cũng được, không bị đốm đen mép sau vài tháng.",
     dimensions: { long: 80, wide: 3, high: 80 },
     materials: ["Kính gương 5mm", "Viền gỗ sồi"],
     colors: [
@@ -813,9 +813,9 @@ export const products: Product[] = [
     category: "trang-tri",
     rooms: ["phong-khach", "can-ho-nho"],
     price: 1450000,
-    short: "Ba tầng so le đón nắng đều, có khay hứng nước tưới.",
+    short: "Ba tầng lệch nhau cho cây nào cũng ăn nắng, có khay hứng nước.",
     description:
-      "Ba tầng đặt so le nhau nên cây tầng dưới không bị tầng trên che nắng. Mỗi tầng có khay nhựa hứng nước tưới rời ra rửa được, không để nước đọng làm mục gỗ hay ố sàn. Đặt cạnh cửa sổ hướng Đông là chỗ nắng tốt nhất cho cây trong nhà.",
+      "Ba tầng đặt so le chứ không thẳng hàng, nên chậu tầng dưới không bị tầng trên che mất nắng. Mỗi tầng có khay nhựa rời hứng nước tưới, nhấc ra rửa được — nước không đọng làm mục chân kệ hay để vệt ố trên sàn. Kê cạnh cửa sổ hướng Đông là chỗ nắng hợp nhất cho cây trong nhà.",
     dimensions: { long: 60, wide: 30, high: 90 },
     materials: ["Gỗ thông sấy", "Khay nhựa PP", "Sơn gốc nước"],
     colors: [
@@ -841,9 +841,9 @@ export const products: Product[] = [
     rooms: ["phong-khach", "phong-ngu"],
     price: 980000,
     oldPrice: 1200000,
-    short: "Bốn vỏ gối linen tông trầm, đổi màu sofa mà không phải bọc lại.",
+    short: "Bốn vỏ gối tông trầm, đổi không khí phòng khách mà không phải bọc lại sofa.",
     description:
-      "Cách rẻ nhất để đổi không khí phòng khách: thay bốn cái gối tựa thay vì bọc lại cả bộ sofa. Bốn vỏ gồm hai màu nền và hai màu nhấn, phối theo quy tắc 60–30–10. Vải linen pha cotton mềm, có khoá kéo giấu, tháo giặt máy.",
+      "Muốn phòng khách trông khác đi mà không tốn nhiều thì thay gối tựa là cách rẻ nhất — bọc lại cả bộ sofa đắt gấp mấy chục lần. Bốn vỏ gồm hai màu nền và hai màu nhấn, chia theo tỉ lệ 60–30–10 nên ném lên sofa là hợp, không cần biết phối màu. Linen pha cotton, khoá kéo giấu, tháo giặt máy.",
     dimensions: { long: 45, wide: 45, high: 12 },
     materials: ["Vải linen pha cotton", "Khoá kéo giấu"],
     colors: [
@@ -873,9 +873,9 @@ export const products: Product[] = [
     rooms: ["phong-lam-viec"],
     price: 9600000,
     isBestSeller: true,
-    short: "Đổi giữa ngồi và đứng bằng một nút, nhớ 4 độ cao.",
+    short: "Bấm nút đổi giữa ngồi và đứng, nhớ sẵn 4 độ cao.",
     description:
-      "Motor đôi nâng êm từ 72cm lên 120cm trong 12 giây, tải 80kg nên hai màn hình vẫn thoải mái. Bảng điều khiển nhớ 4 mức chiều cao, ấn một nút là về đúng tư thế quen. Ngồi liên tục 8 tiếng là nguyên nhân đau lưng phổ biến nhất của dân văn phòng — đứng xen kẽ 15 phút mỗi giờ giúp giảm rõ.",
+      "Hai motor nâng từ 72cm lên 120cm mất 12 giây, tải 80kg nên đặt hai màn hình với cả máy in vẫn không ì. Bảng điều khiển nhớ bốn mức, ấn một nút là về đúng độ cao quen của bạn, không phải canh lại mỗi lần. Ngồi liền tám tiếng là lý do đau lưng phổ biến nhất của dân văn phòng — đứng xen kẽ 15 phút mỗi giờ đỡ hẳn.",
     dimensions: { long: 140, wide: 70, high: 120 },
     materials: ["Mặt MDF phủ melamine", "Khung thép", "Motor đôi"],
     colors: [
@@ -901,9 +901,9 @@ export const products: Product[] = [
     category: "van-phong",
     rooms: ["phong-lam-viec", "phong-ngu"],
     price: 3900000,
-    short: "Ghế làm việc dáng mềm, kê phòng ngủ không lạc lõng như ghế văn phòng.",
+    short: "Ghế làm việc nhìn như ghế bành nhỏ, kê phòng ngủ không lạc lõng.",
     description:
-      "Phần lớn ghế công thái học nhìn rất kỹ thuật, kê vào góc học của phòng ngủ trông lệch hẳn với đồ xung quanh. Tavi bọc nỉ màu trung tính, chân gỗ, nhìn như một chiếc ghế bành nhỏ nhưng vẫn xoay 360° và chỉnh cao thấp bằng ti hơi.",
+      "Ghế công thái học đa số nhìn rất máy móc, kê vào góc học trong phòng ngủ trông chỏi với đồ xung quanh. Tavi bọc nỉ màu trung tính, chân gỗ, nhìn như một cái ghế bành nhỏ — nhưng vẫn xoay đủ 360° và chỉnh cao thấp bằng ti hơi như ghế văn phòng thật.",
     dimensions: { long: 60, wide: 60, high: 95 },
     materials: ["Vải nỉ mềm", "Mút D30", "Chân gỗ sồi", "Ti hơi thép"],
     colors: [
@@ -930,9 +930,9 @@ export const products: Product[] = [
     category: "den-chieu-sang",
     rooms: ["phong-bep-an"],
     price: 2900000,
-    short: "Ba chao nhôm, dây điều chỉnh chiều dài tới 1m5.",
+    short: "Ba chao nhôm, dây 1m5 cắt ngắn được khi lắp.",
     description:
-      "Chao nhôm sơn tĩnh điện hắt sáng xuống đúng mặt bàn, không chói mắt người ngồi đối diện. Dây dài 1m5 cắt ngắn được khi lắp. Treo cách mặt bàn 75–85cm là đẹp và đủ sáng nhất.",
+      "Chao nhôm sơn tĩnh điện khép miệng, ánh sáng đổ thẳng xuống mặt bàn chứ không toé ngang vào mắt người ngồi đối diện. Dây dài 1m5, thợ cắt ngắn theo trần nhà bạn lúc lắp. Treo cách mặt bàn 75–85cm là vừa sáng và vừa mắt nhất.",
     dimensions: { long: 22, wide: 22, high: 25 },
     materials: ["Chao nhôm sơn tĩnh điện", "Đui E27", "Dây vải bọc"],
     colors: [
@@ -960,9 +960,9 @@ export const products: Product[] = [
     rooms: ["phong-khach", "phong-ngu"],
     price: 3400000,
     isBestSeller: true,
-    short: "Cần vươn 90cm, rọi sáng ghế đọc mà không cần khoan tường.",
+    short: "Cần vươn 90cm, rọi đúng ghế đọc mà khỏi khoan tường.",
     description:
-      "Cần cong vươn ra 90cm nên đặt đế sau lưng ghế, ánh sáng rơi đúng trang sách. Đế gang nặng 6kg chống lật. Ba mức sáng chỉnh bằng nút cảm ứng trên thân, nhiệt màu 3000K ấm không hại mắt buổi tối.",
+      "Cần cong vươn ra 90cm nên đặt đế phía sau lưng ghế, ánh sáng rơi đúng trang sách chứ không đổ vào gáy. Không phải khoan tường bắt đèn, dọn nhà bê đi chỗ khác được. Đế gang nặng 6kg giữ cho khỏi lật. Ba mức sáng chỉnh bằng nút cảm ứng trên thân, màu 3000K vàng ấm đọc tối không rát mắt.",
     dimensions: { long: 90, wide: 30, high: 175 },
     materials: ["Đế gang", "Thân thép sơn tĩnh điện", "LED 3000K"],
     colors: [
@@ -990,9 +990,9 @@ export const products: Product[] = [
     rooms: ["phong-lam-viec", "phong-ngu"],
     price: 1190000,
     isNew: true,
-    short: "Đổi 3 nhiệt màu, có cổng sạc USB-C trên đế.",
+    short: "Ba nhiệt màu, đế có sẵn cổng sạc USB-C 18W.",
     description:
-      "Ba nhiệt màu: 3000K để đọc sách buổi tối, 4000K trung tính và 5500K trắng cho lúc làm việc cần tỉnh táo. Đế tích hợp cổng USB-C 18W sạc điện thoại, bớt được một cục sạc trên bàn.",
+      "Ba mức màu cho ba việc: 3000K vàng để đọc sách buổi tối, 4000K trung tính cho lúc bình thường, 5500K trắng khi cần tỉnh táo làm việc khuya. Đế gắn sẵn cổng USB-C 18W cắm sạc điện thoại, bớt được một cục sạc lằng nhằng trên bàn.",
     dimensions: { long: 38, wide: 15, high: 42 },
     materials: ["Nhôm anod", "LED chống nhấp nháy"],
     colors: [
@@ -1017,9 +1017,9 @@ export const products: Product[] = [
     category: "den-chieu-sang",
     rooms: ["phong-ngu", "phong-khach"],
     price: 1650000,
-    short: "Gắn tường đầu giường, đọc sách không làm chói người nằm cạnh.",
+    short: "Gắn tường đầu giường, đọc sách không làm chói người nằm bên.",
     description:
-      "Chao đèn khép kín hắt sáng thành một vệt hẹp xuống trang sách, người nằm bên cạnh gần như không thấy chói. Cần gập được nên đẩy sát tường khi không dùng. Công tắc nằm ngay trên đế, không phải mò tìm trong tối.",
+      "Chao đèn khép kín, ánh sáng ra thành một vệt hẹp rọi xuống trang sách, người nằm cạnh gần như không thấy sáng. Cần gập vào sát tường khi không dùng cho khỏi vướng đầu. Công tắc nằm ngay trên đế đèn, với tay là chạm được, không phải mò dây trong tối.",
     dimensions: { long: 45, wide: 12, high: 20 },
     materials: ["Thân thép sơn tĩnh điện", "LED 3000K"],
     colors: [

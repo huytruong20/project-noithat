@@ -1,5 +1,5 @@
 import type { Order, OrderStatus } from "@/lib/orders";
-import { prisma } from "./db";
+import { layPrisma } from "./db";
 import type { DonMayChu, KhoDonHang } from "./don-hang-kieu";
 
 /**
@@ -14,10 +14,11 @@ import type { DonMayChu, KhoDonHang } from "./don-hang-kieu";
  * tìm kiếm bên trong nó.
  */
 
-function db() {
-  if (!prisma) throw new Error("Chưa có kết nối cơ sở dữ liệu");
-  return prisma;
-}
+/**
+ * Lấy client. Trả về Promise vì client nạp bằng nhập động — cách này để gói
+ * `pg` không bị nhét vào bản build cho Cloudflare, nơi chỉ dùng được Neon.
+ */
+const db = layPrisma;
 
 type DongDb = {
   ma: string;
@@ -66,7 +67,7 @@ function doiKieu(d: DongDb): DonMayChu {
 
 export const khoDonHangDb: KhoDonHang = {
   async tatCa() {
-    const dong = await db().donHang.findMany({ orderBy: { taoLuc: "desc" } });
+    const dong = await (await db()).donHang.findMany({ orderBy: { taoLuc: "desc" } });
     return dong.map(doiKieu);
   },
 
@@ -76,7 +77,7 @@ export const khoDonHangDb: KhoDonHang = {
       gửi lên hai lần cùng một mã đơn. create sẽ ném lỗi và làm hỏng màn hình
       cảm ơn, còn upsert thì lần thứ hai chỉ ghi đè lên chính nó.
     */
-    await db().donHang.upsert({
+    await (await db()).donHang.upsert({
       where: { ma: don.code },
       update: {},
       create: {
@@ -102,7 +103,7 @@ export const khoDonHangDb: KhoDonHang = {
   },
 
   async cuaNguoiDung(idNguoiDung) {
-    const dong = await db().donHang.findMany({
+    const dong = await (await db()).donHang.findMany({
       where: { nguoiDungId: idNguoiDung },
       orderBy: { taoLuc: "desc" },
     });
@@ -110,7 +111,7 @@ export const khoDonHangDb: KhoDonHang = {
   },
 
   async doiTrangThai(ma, trangThai) {
-    await db().donHang.update({
+    await (await db()).donHang.update({
       where: { ma },
       data: { trangThai },
     });
@@ -123,12 +124,12 @@ export const khoDonHangDb: KhoDonHang = {
       Bốn phép đếm chạy song song nên tổng thời gian bằng phép chậm nhất.
     */
     const [tongDon, choXacNhan, dangGiao, hoanTat, cong] = await Promise.all([
-      db().donHang.count(),
-      db().donHang.count({ where: { trangThai: "cho-xac-nhan" } }),
-      db().donHang.count({ where: { trangThai: "dang-giao" } }),
-      db().donHang.count({ where: { trangThai: "hoan-tat" } }),
+      (await db()).donHang.count(),
+      (await db()).donHang.count({ where: { trangThai: "cho-xac-nhan" } }),
+      (await db()).donHang.count({ where: { trangThai: "dang-giao" } }),
+      (await db()).donHang.count({ where: { trangThai: "hoan-tat" } }),
       // Doanh thu chỉ tính đơn đã xác nhận — đơn còn chờ có thể bị huỷ
-      db().donHang.aggregate({
+      (await db()).donHang.aggregate({
         _sum: { tongTien: true },
         where: { trangThai: { not: "cho-xac-nhan" } },
       }),

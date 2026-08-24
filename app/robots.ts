@@ -12,7 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         "/thanh-toan",
         "/tra-cuu-don",
         "/tim-kiem",
-        "/tai-anh",
         // Khu đăng nhập và quản trị: không có gì để tìm kiếm, và không nên
         // để đường dẫn quản trị nằm trong kết quả tìm kiếm của Google
         "/dang-nhap",

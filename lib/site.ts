@@ -8,7 +8,7 @@ export const siteUrl =
 
 export const site = {
   name: "Nội thất HT",
-  tagline: "Nội thất gỗ cho nhà ở và văn phòng",
+  tagline: "Đóng đồ gỗ theo số đo nhà bạn",
   hotline: "0931 619 177",
   hotlineHref: "tel:0931619177",
   email: "lienhe@noithatht.vn",
@@ -34,29 +34,29 @@ export const site = {
     { label: "Zalo", href: "https://zalo.me" },
   ],
   /** Tiêu đề khối cam kết ở trang chủ */
-  commitmentHeading: "Chính sách rõ ràng – Bảo vệ quyền lợi khách hàng tuyệt đối.",
+  commitmentHeading: "Bốn điều chúng tôi ghi thành văn bản, không nói miệng.",
 
   /** Bốn cam kết, hiện ở khối nền đen trang chủ (đánh số 01 – 04) */
   commitments: [
     {
-      title: "Bảo hành tới 5 năm – Bảo trì trọn đời",
+      title: "Bảo hành 5 năm, sửa vặt cả đời",
       detail:
-        "5 năm cho Gỗ tự nhiên & Da thật. 2 năm cho các chất liệu khác. Hỗ trợ chăm sóc sản phẩm không giới hạn thời gian.",
+        "Gỗ tự nhiên và da thật: 5 năm. Chất liệu khác: 2 năm. Hết hạn rồi vẫn gọi được thợ tới siết ốc, chỉnh cánh — chúng tôi không tính công.",
     },
     {
-      title: "Lắp đặt tận nhà – Rác ra khỏi cửa",
+      title: "Lắp xong dọn sạch mới về",
       detail:
-        "Freeship & miễn phí lắp đặt nội thành Gia Lai / TP.HCM. Kỹ thuật viên tự động hút bụi và thu dọn toàn bộ vỏ hộp, rác thải trước khi rời đi.",
+        "Nội thành Gia Lai và TP.HCM: không tính tiền giao, không tính tiền lắp. Thợ trải bạt trước khi làm, hút bụi và mang hết thùng xốp đi khi xong.",
     },
     {
-      title: "Sai thông số – Hoàn tiền 100%",
+      title: "Đo lại thấy sai, trả đủ tiền",
       detail:
-        "Minh bạch từ chất liệu, kích thước đến tải trọng. Bồi hoàn trọn vẹn giá trị nếu sản phẩm không đúng chuẩn công bố.",
+        "Kích thước, loại gỗ, tải trọng đều ghi trên trang sản phẩm. Bạn cầm thước đo lại, lệch so với công bố thì chúng tôi hoàn 100%, không trừ khoản nào.",
     },
     {
-      title: "Báo giá & Phối cảnh miễn phí trong 24h",
+      title: "Gửi mặt bằng, 24 giờ có bản vẽ",
       detail:
-        "Gửi mặt bằng, nhận giải pháp không gian tức thì. Không phí ẩn, không áp lực mua hàng.",
+        "Chụp phòng hoặc gửi bản vẽ căn hộ, chúng tôi dựng phối cảnh và báo giá trong một ngày làm việc. Xem xong không mua cũng không sao.",
     },
   ],
 };

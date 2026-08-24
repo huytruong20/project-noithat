@@ -16,8 +16,28 @@ import { dirname, join } from "node:path";
 
 const thuMuc = join(process.cwd(), ".data");
 
+/**
+ * Nơi chạy này có ghi file được không?
+ *
+ * Cloudflare Workers có sẵn node:fs nhưng gọi vào thì báo "not implemented".
+ * Không chặn trước thì người dựng web nhận đúng câu đó và không hiểu chuyện
+ * gì xảy ra. Chặn ở đây để câu lỗi nói thẳng nguyên nhân và cách sửa.
+ */
+const laMoiTruongKhongGhiDuocFile =
+  typeof navigator !== "undefined" &&
+  navigator.userAgent === "Cloudflare-Workers";
+
+function chanNeuKhongGhiDuoc() {
+  if (!laMoiTruongKhongGhiDuocFile) return;
+  throw new Error(
+    "Cloudflare Workers không cho ghi file, nên kho .data/ không dùng được ở đây. " +
+      "Hãy đặt biến DATABASE_URL để chuyển sang Postgres — xem HUONG-DAN-DATABASE.md.",
+  );
+}
+
 /** Đọc file JSON. Chưa có file thì trả về giá trị mặc định thay vì ném lỗi. */
 export async function doc<T>(ten: string, macDinh: T): Promise<T> {
+  chanNeuKhongGhiDuoc();
   try {
     const noiDung = await readFile(join(thuMuc, ten), "utf8");
     return JSON.parse(noiDung) as T;
@@ -34,6 +54,8 @@ export async function doc<T>(ten: string, macDinh: T): Promise<T> {
  * thao tác nguyên khối ở mức hệ điều hành nên không bao giờ để lại file dở.
  */
 export async function ghi(ten: string, duLieu: unknown) {
+  chanNeuKhongGhiDuoc();
+
   const duong = join(thuMuc, ten);
   await mkdir(dirname(duong), { recursive: true });
 

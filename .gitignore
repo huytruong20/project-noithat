@@ -18,3 +18,7 @@ lib/data/images.generated.ts
 
 # Cấu hình Claude Code riêng của từng máy, không phải mã dự án
 .claude/settings.local.json
+
+# Bản đóng gói cho Cloudflare, sinh lại được bằng npm run cf:build
+.open-next/
+.wrangler/
