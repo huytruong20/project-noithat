@@ -1,22 +1,9 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "noithat-ht",
-  "main": ".open-next/worker.js",
-
-  /*
-    Ngày này quyết định phiên bản runtime của Cloudflare. Để mốc mới thì mới có
-    đủ các API của Node mà mã nguồn đang dùng (crypto, buffer, stream…).
-  */
-  "compatibility_date": "2025-08-01",
-
-  /*
-    nodejs_compat bật lớp giả lập Node trên Workers. KHÔNG có cờ này thì mọi
-    dòng import "node:crypto" đều lỗi ngay lúc build.
-  */
+  "name": "project-noithat-pages",
+  "compatibility_date": "2025-01-01",
   "compatibility_flags": ["nodejs_compat"],
-
   "assets": {
     "directory": ".open-next/assets",
-    "binding": "ASSETS"
+    "not_found_handling": "single-page-application"
   }
 }
