@@ -1,4 +1,5 @@
-# Nội thất HT — Website nội thất
+
+ # Nội thất HT — Website nội thất
 
 Website bán nội thất gia đình và văn phòng, dựng bằng **Next.js 16 (App Router) +
 React 19 + Tailwind CSS 4 + TypeScript**.
